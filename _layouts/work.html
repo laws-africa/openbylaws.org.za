@@ -1,0 +1,190 @@
+---
+layout: base
+---
+
+{% assign place = site.data.places|where: "code", page.place_code|first %}
+
+<header class="{% if page.stub %}{% else %}pb-0{% endif %}">
+  <div class="container">
+    <div class="header-content">
+      <ol class="list-inline breadcrumbs region">
+        <li>
+          <a href="{{ place.place_code }}/{{ page.lang }}/">{{ place.name }}</a>
+        </li>
+      </ol>
+      <h1>
+        {{ page.title }}
+      </h1>
+      <h2 class="pt-1">
+        TODO
+      </h2>
+
+      <nav class="bylaw-nav">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a aria-controls="main" aria-selected="true" class="nav-link active" data-toggle="tab" href="#main" id="main-tab" role="tab">By-law</a>
+          </li>
+          <li class="nav-item">
+            <a aria-controls="toc" class="nav-link" data-toggle="tab" href="#toc" id="toc-tab" role="tab">
+              <span class="d-none d-sm-inline">Table of</span>
+              Contents
+            </a>
+          </li>
+          <li class="nav-item">
+            <a aria-controls="resources" class="nav-link" data-toggle="tab" href="#resources" id="resources-tab" role="tab">
+              History
+            </a>
+          </li>
+          <li class="ml-auto d-none d-md-block social-buttons">
+            <a class="fb-share" href="#">
+              <i class="fab fa-facebook"></i>
+              Share
+            </a>
+            <a class="twitter-share" href="#" text="Advertising and Signage">
+              <i class="fab fa-twitter"></i>
+              Tweet
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+    <div id="notices">
+      {% include covid19_notice.html %}
+
+      <div class="alert alert-info">
+        TODO
+        This is the latest version of this By-law.
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <div aria-labelledby="main-tab" class="tab-pane fade show active" id="main" role="tabpanel">
+        <div class="row">
+          <div class="col-md-4">
+            <nav class="left-nav">
+              <aside>
+                <h5>Download for later</h5>
+                <ul class="list-unstyled download-list clearfix">
+                  <li>
+                    <a class="download epub" href="resources/{{ page.language }}.epub" target="_blank">
+                      <span class="title">{{ page.title }}</span>
+                      <span class="format">
+                        ePUB
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="download html" href="resources/{{ page.language }}.html" target="_blank">
+                      <span class="title">{{ page.title }}</span>
+                      <span class="format">
+                        HTML
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="download pdf" href="resources/{{ page.language }}.pdf" target="_blank">
+                      <span class="title">{{ page.title }}</span>
+                      <span class="format">
+                        PDF
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+
+              </aside>
+              <aside class="toc">
+                <h5>Table of Contents</h5>
+                TODO
+              </aside>
+            </nav>
+
+          </div>
+          <div class="col-md-8">
+            <article class="akoma-ntoso akoma-ntoso-container">
+              {{ content }}
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div aria-labelledby="toc-tab" class="tab-pane fade" id="toc" role="tabpanel">
+        <section class="toc">
+          TODO
+        </section>
+      </div>
+
+      <div aria-labelledby="resources-tab" class="tab-pane fade" id="resources" role="tabpanel">
+        <section class="resources">
+          <div class="mt-3">
+            <div class="row">
+              <div class="col-sm-8 mb-3">
+                <h3>History of this By-law</h3>
+                <div class="timeline">
+                  TODO
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="downloads mb-3">
+                  <h3>Download for later</h3>
+
+                  <p>
+                  Download the current version of this By-law to read later on your desktop, e-reader or tablet.
+                  </p>
+
+                  TODO
+
+                  <ul class="list-unstyled download-list clearfix">
+                    <li>
+                      <a class="download epub" href="resources/eng.epub" target="_blank">
+                        <span class="title">Advertising and Signage</span>
+                        <span class="format">
+                          ePUB
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="download html" href="resources/eng.html" target="_blank">
+                        <span class="title">Advertising and Signage</span>
+                        <span class="format">
+                          HTML
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="download pdf" href="resources/eng.pdf" target="_blank">
+                        <span class="title">Advertising and Signage</span>
+                        <span class="format">
+                          PDF
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+                <h3>{{ place.name }}</h3>
+                <p>
+                  <a href="{{ place.bylaws_url }}">
+                    <img src="/img/municipalities/{{ place.place_code }}-logo.png">
+                  </a>
+                </p>
+
+                <p>
+                  <a href="{{ place.bylaws_url }}">{{ place.name }} By-laws Website</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </div>
+</article>
