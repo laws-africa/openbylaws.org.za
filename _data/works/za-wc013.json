@@ -1,0 +1,12 @@
+[
+	{
+		"title": "foo",
+		"frbr_uri": "/za-wc013/act/by-law/2019/foo",
+		"repeal": {
+			"date": "2020-01-01"
+		}
+	}, {
+		"title": "bar",
+		"frbr_uri": "/za-wc013/act/by-law/2018/bar"
+	}
+]

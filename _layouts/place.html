@@ -1,6 +1,111 @@
 ---
 layout: base
 ---
-{% for work in page.works %}
-<a href="{{ work.frbr_uri }}">{{ work.title }}</a>
-{% endfor %}
+{% assign works = site.data.works[page.place_code] %}
+{% assign place = site.data.places|where: "code", page.place_code|first %}
+
+<header>
+  <div class="container">
+    <div class="header-content">
+      <h1>{{ place.name }}</h1>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        {% if place_code == 'za' %}{% else %}
+          {% include covid19_notice.html %}
+        {% endif %}
+
+        {% if place.languages.length > 1 %}
+          <div class="lang-changer">
+            Change language:
+
+            <ul class="list-inline">
+              {% for lang in region.languages %}
+                <li>
+                  <a href="/{{ place.place_code }}/{{ lang.code }}/" class="{% if page.language == lang.code %}text-muted{% endif %}">{{ lang.name }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+
+        <form action="/search.html" method="get" role="search">
+          <input name="region" type="hidden" value="cpt">
+          <div class="input-group">
+            <input class="form-control" name="q" placeholder="Search the by-laws" type="text">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+          </div>
+          <br>
+        </form>
+
+        <table class="table table-sm table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>Title</th>
+              <th>First Published</th>
+            </tr>
+          </thead>
+          <tbody>
+            TODO: select works for language
+            {% assign inforce = works | sort: "title" %}
+            {% for work in inforce %}
+              {% if work.repeal %}{% else %}
+                <tr>
+                  <td>
+                    <a href="{{ work.frbr_uri }}/">{{ work.title }}</a>
+                  </td>
+                  <td class="text-nowrap">{{ work.publication_date }}</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+
+        {% assign repealed = works | where_exp: "w", "w.repeal" | sort: "title" %}
+        {% if repealed %}
+          <h4 class="mt-4">Repealed</h4>
+
+          <table class="table table-sm table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th>Title</th>
+                <th>First Published</th>
+                <th>Repealed</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for work in repealed %}
+                <tr>
+                  <td>
+                    <a href="{{ work.frbr_uri }}/">{{ work.title }}</a>
+                  </td>
+                  <td class="text-nowrap">{{ work.publication_date }}</td>
+                  <td class="text-nowrap">{{ work.repeal.date }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% endif %}
+      </div>
+
+      <div class="col-md-3 resources">
+        <h3>More resources</h3>
+
+        <p>
+          <a href="{{ place.bylaws_url }}"><img src="/img/municipalities/{{ place.code }}-logo.png"></a>
+        </p>
+
+        <p>
+          <a href="{{ place.bylaws_url }}">{{ place.name }} By-laws Website</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</article>

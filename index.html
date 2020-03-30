@@ -47,7 +47,7 @@ layout: base
         {% for place in places %}
           {% if place.microsite %}{% else %}{% if place.special %}{% else %}
             <div class="col-md-4">
-              <a class="placard {{ place.code }}" href="/za-{{ place.code }}/eng/" style="background-image: url(/img/municipalities/{{ place.code }}-placard.jpg)">
+              <a class="placard {{ place.code }}" href="/{{ place.code }}/eng/" style="background-image: url(/img/municipalities/{{ place.code }}-placard.jpg)">
                 <h3>{{ place.name }}</h3>
               </a>
             </div>
