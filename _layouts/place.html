@@ -1,0 +1,6 @@
+---
+layout: base
+---
+{% for work in page.works %}
+<a href="{{ work.frbr_uri }}">{{ work.title }}</a>
+{% endfor %}

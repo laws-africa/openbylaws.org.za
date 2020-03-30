@@ -42,21 +42,32 @@ layout: base
         </div>
       </div>
 
-      - regions.values.reject { |r| r.microsite or r.special }.sort_by { |r| r.name }.each_slice(3) do |chunk|
-        .row
-          - for region in chunk
-            .col-md-4
-              %a.placard{class: region.code, href: "/za-#{region.code}/eng/", style: "background-image: url(/img/municipalities/#{region.code}-placard.jpg)"}
-                %h3&= region.name
+      <div class="row">
+        {% assign places = site.data.places | sort:"name" %}
+        {% for place in places %}
+          {% if place.microsite %}{% else %}{% if place.special %}{% else %}
+            <div class="col-md-4">
+              <a class="placard {{ place.code }}" href="/za-{{ place.code }}/eng/" style="background-image: url(/img/municipalities/{{ place.code }}-placard.jpg)">
+                <h3>{{ place.name }}</h3>
+              </a>
+            </div>
+          {% endif %}{% endif %}
+        {% endfor %}
+      </div>
 
-      %h5 Official municipal partners
+      <h5>Official municipal partners</h5>
 
-      - regions.values.select { |r| r.microsite }.sort_by { |r| r.name }.each_slice(3) do |chunk|
-        .row
-          - for region in chunk
-            .col-md-4
-              %a.placard{class: region.code, href: "https://#{region.bucket}/", style: "background-image: url(/img/municipalities/#{region.code}-placard.jpg)"}
-                %h3&= region.name
+      <div class="row">
+        {% for place in places %}
+          {% if place.microsite %}{% if place.special %}{% else %}
+            <div class="col-md-4">
+              <a class="placard {{ place.code }}" href="https://{{ place.bucket }}/" style="background-image: url(/img/municipalities/{{ place.code }}-placard.jpg)">
+                <h3>{{ place.name }}</h3>
+              </a>
+            </div>
+          {% endif %}{% endif %}
+        {% endfor %}
+      </div>
 
     </div>
   </section>

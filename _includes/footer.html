@@ -13,7 +13,7 @@
           <p>
           A project by <a href="https://laws.africa">Laws.Africa</a>.
           </p>
-          <img src="img/logo-lg.png" style="max-width: 75px">
+          <img src="/img/logo-lg.png" style="max-width: 75px">
         </nav>
       </div>
 
@@ -21,30 +21,14 @@
         <nav class="mb-3">
           <h5>Municipalities</h5>
           <ul>
-            <li>
-              <a href="/za-wc013/eng/">Bergrivier</a>
-            </li>
-            <li>
-              <a href="https://capeagulhas.openbylaws.org.za">Cape Agulhas</a>
-            </li>
-            <li>
-              <a href="/za-cpt/eng/">Cape Town</a>
-            </li>
-            <li>
-              <a href="/za-wc012/eng/">Cederberg</a>
-            </li>
-            <li>
-              <a href="/za-jhb/eng/">Johannesburg</a>
-            </li>
-            <li>
-              <a href="https://matzikama.openbylaws.org.za">Matzikama</a>
-            </li>
-            <li>
-              <a href="https://mbizana.openbylaws.org.za">Mbizana</a>
-            </li>
-            <li>
-              <a href="/za-eth/eng/">eThekwini</a>
-            </li>
+            {% assign places = site.data.places | sort: "name" %}
+            {% for place in places %}
+              {% if place.special %}{% else %}
+                <li>
+                  <a href="{% if place.microsite %}https://{{ place.bucket }}/{% else %}/{{ place.code }}/eng/{% endif %}">{{ place.name }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
           </ul>
         </nav>
       </div>
@@ -114,7 +98,7 @@
         </p>
       </div>
       <div class="col-md-4 text-right">
-        <img alt="Laws.Africa logo" src="img/lawsafrica-logo-horizontal.png" width="200px">
+        <img alt="Laws.Africa logo" src="/img/lawsafrica-logo-horizontal.png" width="200px">
       </div>
     </div>
   </div>
