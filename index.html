@@ -1,0 +1,151 @@
+---
+title: Open By-laws South Africa
+layout: base
+---
+
+<div id="main-page">
+  <section class="welcome py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 pb-3">
+          <h1>
+            South Africa's
+            <nobr>By-laws</nobr>
+          </h1>
+          <h3 class="font-weight-normal">
+            Freely available, easy to find, read and share.
+          </h3>
+        </div>
+        <div class="col-sm-5">
+          <div class="text-center">
+            <img class="logo" src="img/logo-lg.png">
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h5 class="text-center text-sm-left">
+          A project by
+          <a href="https://laws.africa">
+            <img alt="Laws.Africa" class="ml-2" src="img/lawsafrica-logo-horizontal.png" style="width: 150px">
+          </a>
+        </h5>
+      </div>
+    </div>
+  </section>
+  <section class="places py-5">
+    <div class="container">
+      <div class="mb-5">
+        {% include covid19_notice.html %}
+
+        <div>
+          Visit <a href="https://www.sacoronavirus.co.za">sacoronavirus.co.za</a> for more COVID-19 information.
+        </div>
+      </div>
+
+      - regions.values.reject { |r| r.microsite or r.special }.sort_by { |r| r.name }.each_slice(3) do |chunk|
+        .row
+          - for region in chunk
+            .col-md-4
+              %a.placard{class: region.code, href: "/za-#{region.code}/eng/", style: "background-image: url(/img/municipalities/#{region.code}-placard.jpg)"}
+                %h3&= region.name
+
+      %h5 Official municipal partners
+
+      - regions.values.select { |r| r.microsite }.sort_by { |r| r.name }.each_slice(3) do |chunk|
+        .row
+          - for region in chunk
+            .col-md-4
+              %a.placard{class: region.code, href: "https://#{region.bucket}/", style: "background-image: url(/img/municipalities/#{region.code}-placard.jpg)"}
+                %h3&= region.name
+
+    </div>
+  </section>
+
+  <section class="about py-5">
+    <div class="container">
+      <h3>Anyone can help to make the law freely available</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <p class="lead">
+          Open By-laws is maintained by the <a href="https://laws.africa">Laws.Africa</a> contributor community. Anyone can join the community and help to make African law freely available. You can help by adding new by-laws or keeping them up to date. Laws.Africa offers training and support.
+          </p>
+          <p>
+          <a href="https://laws.africa/faq">About the Laws.Africa Contributor Community →</a>
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="social-buttons">
+            <p>
+            <a href="https://twitter.com/OpenByLawsZA" target="_blank">
+              <i class="fab fa-twitter"></i>
+              Follow @OpenByLawsZA on Twitter
+            </a>
+            </p>
+            <p>
+            <a href="https://www.facebook.com/openbylaws.org.za" target="_blank">
+              <i class="fab fa-facebook"></i>
+              Open By-laws on Facebook
+            </a>
+            </p>
+          </div>
+
+          <h4>Sign up to our mailing list</h4>
+          <p>For updates on new by-laws, workshops and other news.</p>
+
+          <form action="//openbylaws.us8.list-manage.com/subscribe/post?u=8d5d7d360e06d41a55d4de581&amp;amp;id=39dbd074dc" id="subscribe" method="post" target="_blank">
+            <div class="input-group">
+              <input class="form-control" id="mce-EMAIL" name="EMAIL" placeholder="Your email address" required="required" type="email">
+              <div class="input-group-append">
+                <button class="btn btn-primary" name="subscribe" type="submit">Sign up</button>
+              </div>
+            </div>
+            <div style="position: absolute; left: -5000px;">
+              <input name="b_8d5d7d360e06d41a55d4de581_39dbd074dc" tabindex="-1" type="text" value="">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+
+          <h3>Powered by Laws.Africa</h3>
+
+          <p class="lead">Open By-laws is powered by the Laws.Africa legislation commons of African legislation.</p>
+          <p class="lead">
+            <a href="https://laws.africa">Laws.Africa</a> is a non-profit organisation that curates the African legislation commons and builds technology to enable free access to the law.
+          </p>
+        </div>
+
+        <div class="col-md-3 text-center align-self-center">
+          <img alt="Laws.Africa logo" class="my-3" src="img/lawsafrica-logo-6b8b7388.png" style="width: 150px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h3>Use the by-laws in your app or website</h3>
+          <p class="lead">
+          Include the by-laws in your research, website, or app and build powerful interactive solutions for your users.
+          </p>
+          <p class="lead">
+          The by-laws are available as structured, machine-friendly Akoma Ntoso XML through the Laws.Africa Content API. Access rich content in HTML, PDF and ePub, and detailed metadata including publication and amendment information.
+          </p>
+          <p>
+          <a href="https://laws.africa/api/">About the Laws.Africa Content API →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

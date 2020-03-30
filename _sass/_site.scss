@@ -1,0 +1,251 @@
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  background-image: none;
+}
+
+#header {
+  a.navbar-brand {
+    background-image: url(/img/logo-md-inv.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    background-size: 35px;
+    padding-left: 45px;
+  }
+}
+
+.lawsafrica-site-header {
+  padding: 5px 0px;
+  text-align: right;
+  background-color: #e9ecef;
+}
+
+#footer {
+  background-color: #e9ecef;
+  margin-top: 5rem;
+
+  ul {
+    padding-left: 0px;
+    list-style: none;
+  }
+
+  a[rel="license"] > img {
+    width: 88px;
+    margin: 0px 0px 10px 0px;
+  }
+}
+
+#main-content {
+  margin-bottom: 40px;
+
+  header {
+    background-color: #e9ecef;
+    padding: 10px 0px;
+
+    h1 {
+      margin: 0px;
+      font-size: 24.5px;
+      
+      a {
+        color: inherit;
+      }
+    }
+
+    h2 {
+      font-size: 19px;
+    }
+
+    .breadcrumbs {
+      @media print { display: none }
+
+      margin-left: 0px;
+
+      li {
+        padding-left: 0px;
+      }
+    }
+
+    h1 + .breadcrumbs {
+      margin: 10px 0px 0px;
+    }
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  &> article,
+  .bylaws-page
+  {
+    margin-top: 20px;
+
+    @media (min-width: 769px) {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.lang-changer {
+  margin-bottom: 20px;
+
+  ul {
+    display: inline;
+    margin-left: 5px;
+  }
+}
+
+/* phones */
+@media (max-width: 768px) {
+  .full-xs {
+    width: 100%;
+  }
+
+  input[type=text],
+  input[type=email] {
+    font-size: 16px;
+  }
+}
+
+@media print {
+  @page {
+    margin: 2cm;
+  }
+
+  body, .container {
+    width: auto;
+  }
+
+  body {
+    margin: 2cm;
+  }
+
+  nav, .navbar .nav {
+    display: none;
+  }
+
+  #main-content {
+    header {
+      border-bottom: 0px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+
+      ol.breadcrumbs.region {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.resources h3 {
+  margin-top: 0px;
+}
+
+.about-nav.affix {
+  top: 20px;
+}
+
+.download-list {
+  .download {
+    display: block;
+    float: left;
+    width: 90px;
+    height: 110px;
+    position: relative;
+
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    background: #efefef;
+
+    text-align: center;
+    color: #777;
+  }
+
+  .download:hover,
+  .download:active,
+  .download:focus {
+    text-decoration: none;
+  }
+
+  .download:hover {
+    box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.25);
+    top: -1px;
+    left: -1px;
+  }
+
+  .title {
+    font-size: 12px;
+    line-height: 1.2;
+    display: block;
+    height: 74px;
+    overflow-y: hidden;
+  }
+
+  .format {
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    color: white;
+    left: -0.5em;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .format::before {
+    content: "";
+    bottom: -0.5em;
+    border-width: .5em 0 0 0.5em;
+    position: absolute;
+    display: block;
+    border-style: solid;
+    z-index: -1;
+  }
+
+  .pdf {
+    .format {
+      background-color: #D9534F;
+    }
+
+    .format::before {
+      border-color: #A94442 transparent transparent transparent;
+    }
+  }
+
+  .epub {
+    .format {
+      background-color: #89B70B;
+    }
+
+    .format::before {
+      border-color: #79A70A transparent transparent transparent;
+    }
+  }
+
+  .html {
+    .format {
+      background-color: #2989d8;
+    }
+
+    .format::before {
+      border-color: #0675b3 transparent transparent transparent;
+    }
+  }
+}
