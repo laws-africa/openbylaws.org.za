@@ -5,6 +5,8 @@ import os
 import sys
 import bisect
 from datetime import datetime, timedelta
+from itertools import groupby
+import argparse
 
 import yaml
 import requests
@@ -14,6 +16,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)8s %(mes
 log = logging.getLogger(__name__)
 
 TIMEOUT = 30
+SETTINGS = {}
 
 # Indigo's API configuration
 INDIGO_URL = 'https://api.laws.africa/v1'
@@ -41,7 +44,6 @@ def write_place(place):
     works = list_works(place)
     log.info(f"Got {len(works)} works for {place['code']}")
 
-    # TODO: strip some info?
     with open(f"_data/works/{place['code']}.json", "w") as f:
         json.dump(works, f, indent=2, sort_keys=True)
 
@@ -97,6 +99,33 @@ def list_works(place):
 
 
 def process_work(work):
+    # strip some info
+    KEEP = """
+        amendments
+        assent_date
+        commencement_date
+        expression_date
+        expression_frbr_uri
+        frbr_uri
+        language
+        parent_work
+        points_in_time
+        publication_date
+        publication_document
+        publication_name
+        publication_number
+        repeal
+        repealed
+        stub
+        title
+        type_name
+        url
+    """.split()
+
+    for key in list(work.keys()):
+        if key not in KEEP:
+            del work[key]
+
     work['repealed'] = bool(work['repeal'])
 
     expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
@@ -115,13 +144,13 @@ def write_work(place, work):
     dates = sorted(list(set(x['date'] for x in work['amendments'])))
 
     # do the current one
-    write_expression(place, work, False, dates)
+    write_expression(place, work, work, False, dates)
 
     if work['multiple_pits']:
         log.info(f"Multiple points in time")
         # only write date-specific points in time if there are multiple
         # points in time
-        write_expression(place, work, True, dates)
+        write_expression(place, work, work, True, dates)
 
     for expr in expressions:
         # skip the current one, we've already done it
@@ -130,10 +159,10 @@ def write_work(place, work):
             resp = indigo.get(expr['url'] + '.json', timeout=TIMEOUT)
             resp.raise_for_status()
             expr = resp.json()
-            write_expression(place, expr, work['multiple_pits'], dates)
+            write_expression(place, work, expr, work['multiple_pits'], dates)
 
 
-def write_expression(place, expr, use_date, dates):
+def write_expression(place, work, expr, use_date, dates):
     dirname = expr['frbr_uri'][1:] + '/' + expr['language']
     if use_date:
         dirname += '@' + expr['expression_date']
@@ -150,7 +179,7 @@ def write_expression(place, expr, use_date, dates):
         "expression_date": expr['expression_date'],
         "place_code": place['code'],
         "toc": work_toc(expr),
-        "history": work_history(expr),
+        "history": work_history(work, expr['language']),
         "latest_expression": not dates or expr['expression_date'] == dates[-1],
     }
 
@@ -167,8 +196,11 @@ def write_expression(place, expr, use_date, dates):
     # wrap in DIV tags so that markdown doesn't get confused
     html = "<div>" + resp.text + "</div>"
 
-    write_images(place, expr, dirname)
-    write_archive_formats(place, expr, dirname)
+    if not SETTINGS['SKIP_IMAGES']:
+        write_images(place, expr, dirname)
+
+    if not SETTINGS['SKIP_ARCHIVE']:
+        write_archive_formats(place, expr, dirname)
 
     with open(fname, "w") as f:
         f.write("---\n")
@@ -230,15 +262,80 @@ def work_toc(work):
     return work['toc']
 
 
-def work_history(work):
-    # TODO
-    return []
+def work_history(work, language):
+    events = []
+
+    expressions = {}
+    for pit in work['points_in_time']:
+        # fallback
+        expressions[pit['date']] = pit['expressions'][0]
+
+        # now see if we have a better language
+        for expr in pit['expressions']:
+            if expr['language'] == language:
+                expressions[pit['date']] = expr
+                break
+
+    if work['assent_date']:
+        events.append({
+            'date': work['assent_date'],
+            'event': 'assent',
+        })
+
+    if work['publication_date']:
+        events.append({
+            'date': work['publication_date'],
+            'event': 'publication',
+        })
+
+    if work['commencement_date']:
+        events.append({
+            'date': work['commencement_date'],
+            'event': 'commencement',
+        })
+
+    events.extend([{
+        'date': a['date'],
+        'event': 'amendment',
+        'amending_title': a['amending_title'],
+        'amending_uri': a['amending_uri'],
+    } for a in work['amendments']])
+
+    if work['repeal']:
+        events.append({
+            'date': work['repeal']['date'],
+            'event': 'repeal',
+            'repealing_title': work['repeal']['repealing_title'],
+            'repealing_uri': work['repeal']['repealing_uri'],
+        })
+
+    # group by date then unpack
+    events.sort(key=lambda e: e['date'])
+    events = [{
+        'date': date,
+        'events': list(group),
+    } for date, group in groupby(events, lambda e: e['date'])]
+
+    # link in expressions, remove unneccessary date
+    for event in events:
+        for e in event['events']:
+            del e['date']
+        event['expression_frbr_uri'] = expressions.get(event['date'], {}).get('expression_frbr_uri')
+
+    # sort groups
+    events.sort(key=lambda e: e['date'], reverse=True)
+
+    return events
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        place_codes = sys.argv[1:]
-    else:
-        place_codes = []
 
-    update_content(place_codes)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--quick', action='store_true', default=False)
+    parser.add_argument('place', nargs='*', help='Place code to load (defaults to all)')
+    args = parser.parse_args()
+
+    SETTINGS['SKIP_ARCHIVE'] = args.quick
+    SETTINGS['SKIP_IMAGES'] = args.quick
+
+    update_content(args.place)

@@ -7,3 +7,5 @@ url: https://openbylaws.org.za
 markdown: kramdown
 plugins:
 - jekyll-redirect-from
+exclude:
+- bin

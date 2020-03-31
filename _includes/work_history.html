@@ -6,8 +6,8 @@
       <li>
         <h5>
           {{ entry.date|date:"%e %B %Y" }}
-          {% if entry.date == work.expression_date %}
-            <span class="badge {% if work.latest_expression %}badge-info{% else %}badge-warning{% endif %}">this version</span>
+          {% if entry.date == page.expression_date %}
+            <span class="badge {% if page.latest_expression %}badge-info{% else %}badge-warning{% endif %}">this version</span>
           {% endif %}
         </h5>
 
@@ -34,9 +34,9 @@
           </div>
         {% endfor %}
 
-        {% if entry.date != work.expression_date %}
+        {% if entry.date != page.expression_date %}
           {% if entry.expression_frbr_uri %}
-            <a class="btn btn-outline-primary mt-2" href="{{ entry.expression_frbr_uri }}">Read this version</a>
+            <a class="btn btn-outline-primary mt-2" href="{{ entry.expression_frbr_uri }}/">Read this version</a>
           {% endif %}
         {% endif %}
       </li>
