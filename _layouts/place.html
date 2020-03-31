@@ -53,7 +53,6 @@ layout: base
             </tr>
           </thead>
           <tbody>
-            TODO: select works for language
             {% assign inforce = works | where: "stub", "false" | sort: "title" %}
             {% for work in inforce %}
               {% unless work.repeal %}

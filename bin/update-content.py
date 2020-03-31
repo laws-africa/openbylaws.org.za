@@ -38,6 +38,11 @@ def update_content():
 
 def write_place(place):
     works = list_works(place)
+
+    # TODO: strip some info?
+    with open(f"_data/works/{place['code']}.json", "w") as f:
+        json.dump(works, f, indent=2, sort_keys=True)
+
     for work in works:
         write_work(place, work)
 
@@ -63,10 +68,6 @@ def write_place(place):
             f.write("---\n")
             yaml.dump(metadata, f)
             f.write("---\n")
-
-    # TODO: strip some info?
-    with open(f"_data/works/{place['code']}.json", "w") as f:
-        json.dump(works, f, indent=2, sort_keys=True)
 
 
 def list_works(place):
@@ -154,7 +155,8 @@ def write_expression(place, expr, use_date, pit_dates):
     # wrap in DIV tags so that markdown doesn't get confused
     html = "<div>" + resp.text + "</div>"
 
-    # TODO: images
+    write_images(place, expr, dirname)
+
     # TODO: pdf, epub
 
     with open(fname, "w") as f:
@@ -162,6 +164,31 @@ def write_expression(place, expr, use_date, pit_dates):
         yaml.dump(metadata, f)
         f.write("---\n\n")
         f.write(html)
+
+
+def write_images(place, expr, dirname):
+    images = []
+
+    url = expr['url'] + '/media.json'
+    while url:
+        resp = indigo.get(url, timeout=TIMEOUT)
+        resp.raise_for_status()
+        data = resp.json()
+        images.extend(x for x in data['results'] if x['mime_type'].startswith('image/'))
+        url = data['next']
+
+    if images:
+        log.info(f"Got {len(images)} images for {expr['expression_frbr_uri']}")
+        dirname = os.path.join(dirname, 'media')
+        os.makedirs(dirname, exist_ok=True)
+
+    for img in images:
+        log.info(f"Fetching and saving image {img['filename']}")
+        resp = indigo.get(img['url'])
+        # this is a binary string
+        data = resp.content
+        with open(os.path.join(dirname, img['filename']), "wb") as f:
+            f.write(data)
 
 
 def work_toc(work):
