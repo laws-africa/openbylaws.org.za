@@ -197,17 +197,18 @@ def write_expression(place, work, expr, use_date, dates):
     # wrap in DIV tags so that markdown doesn't get confused
     html = "<div>" + resp.text + "</div>"
 
-    if not SETTINGS['SKIP_IMAGES']:
-        write_images(place, expr, dirname)
-
-    if not SETTINGS['SKIP_ARCHIVE']:
-        write_archive_formats(place, expr, dirname)
-
     with open(fname, "w") as f:
         f.write("---\n")
         yaml.dump(metadata, f)
         f.write("---\n\n")
         f.write(html)
+
+    if not expr['stub']:
+        if not SETTINGS['SKIP_IMAGES']:
+            write_images(place, expr, dirname)
+
+        if not SETTINGS['SKIP_ARCHIVE']:
+            write_archive_formats(place, expr, dirname)
 
 
 def write_images(place, expr, dirname):
@@ -239,9 +240,9 @@ def write_archive_formats(place, expr, dirname):
     dirname = os.path.join(dirname, 'resources')
     os.makedirs(dirname, exist_ok=True)
 
-    for fmt in ['pdf', 'epub']:
+    for fmt, params in [('pdf', {}), ('epub', {}), ('html', {'standalone': '1'})]:
         log.info(f"Fetching {fmt}")
-        resp = indigo.get(expr['url'] + "." + fmt)
+        resp = indigo.get(expr['url'] + "." + fmt, params=params)
 
         # this is a binary string
         data = resp.content
