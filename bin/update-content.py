@@ -132,6 +132,7 @@ def write_expression(place, expr, use_date, pit_dates):
     metadata = {
         "layout": "work",
         "title": expr['title'],
+        "frbr_uri": expr['frbr_uri'],
         "language": expr['language'],
         "expression_date": expr['expression_date'],
         "place_code": place['code'],
