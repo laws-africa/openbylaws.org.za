@@ -3,6 +3,8 @@ import json
 import logging
 import os
 import sys
+import bisect
+from datetime import datetime, timedelta
 
 import yaml
 import requests
@@ -80,59 +82,99 @@ def list_works(place):
         works.extend(data['results'])
         url = data['next']
 
+    # only work with commenced works
+    works = [w for w in works if w['commenced']]
+
     return works
 
 
 def write_work(place, work):
     """ Write the various files for this work, including different expressions and languages.
     """
+    log.info(f"Writing {work['frbr_uri']}")
+
     expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
-    languages = [x['language'] for x in expressions]
-    work['languages'] = languages
+    pits = len(set(x['expression_date'] for x in expressions))
+    work['languages'] = [x['language'] for x in expressions]
+
+    # point-in-time dates
+    dates = sorted(list(set(x['date'] for x in work['amendments'])))
 
     # do the current one
-    work['latest_expression'] = True
-    write_expression(place, work)
+    multiple_pits = work['multiple_pits'] = pits > 1
+    write_expression(place, work, False, dates)
+
+    if pits > 1:
+        log.info(f"{pits} points in time")
+        # only write date-specific points in time if there are multiple
+        # points in time
+        write_expression(place, work, True, dates)
 
     for expr in expressions:
-        # skip the current one
+        # skip the current one, we've already done it
         if expr['expression_frbr_uri'] != work['expression_frbr_uri']:
             log.info(f"Fetching {expr['expression_frbr_uri']}")
             resp = indigo.get(expr['url'] + '.json', timeout=TIMEOUT)
             resp.raise_for_status()
             expr = resp.json()
-            write_expression(place, expr)
+            write_expression(place, expr, pits > 1, dates)
 
 
-def write_expression(place, expr):
-    # TODO: ensure dir exists
+def write_expression(place, expr, use_date, pit_dates):
     dirname = expr['frbr_uri'][1:] + '/' + expr['language']
+    if use_date:
+        dirname += '@' + expr['expression_date']
+
     os.makedirs(dirname, exist_ok=True)
     fname = os.path.join(dirname, "index.md")
-    log.info(f"Writing {expr['expression_frbr_uri']} to {fname}")
+    log.info(f"Writing {dirname}")
+
+    metadata = {
+        "layout": "work",
+        "title": expr['title'],
+        "language": expr['language'],
+        "expression_date": expr['expression_date'],
+        "place_code": place['code'],
+        "toc": work_toc(expr),
+        "history": work_history(expr),
+        "latest_expression": not pit_dates or expr['expression_date'] == pit_dates[-1],
+    }
+
+    if pit_dates:
+        # find the next date after in_force_from
+        ix = bisect.bisect_left(pit_dates, expr['expression_date'])
+        if ix < len(pit_dates) - 1:
+            # subtract one day
+            date = datetime.strptime(pit_dates[ix + 1], '%Y-%m-%d').date() - timedelta(days=1)
+            metadata['in_force_to'] = date.strftime('%Y-%m-%d')
+
+    resp = indigo.get(expr['url'] + '.html', timeout=TIMEOUT)
+    resp.raise_for_status()
+    # wrap in DIV tags so that markdown doesn't get confused
+    html = "<div>" + resp.text + "</div>"
 
     # TODO: images
     # TODO: pdf, epub
 
-    metadata = {
-        "layout": "work",
-        "place_code": place['code'],
-        "toc": work_toc(expr),
-        "toc": work_history(expr),
-    }
-
-    for fld in "title language expression_date".split():
-        metadata[fld] = expr[fld]
-
     with open(fname, "w") as f:
         f.write("---\n")
         yaml.dump(metadata, f)
-        f.write("---\n")
+        f.write("---\n\n")
+        f.write(html)
 
 
 def work_toc(work):
-    # TODO
-    return []
+    if 'toc' not in work:
+        toc = []
+        if not work['stub']:
+            log.info(f"Fetching TOC for {work['expression_frbr_uri']}")
+            resp = indigo.get(work['url'] + '/toc.json', timeout=TIMEOUT)
+            resp.raise_for_status()
+            toc = resp.json()['toc']
+
+        work['toc'] = toc
+
+    return work['toc']
 
 
 def work_history(work):

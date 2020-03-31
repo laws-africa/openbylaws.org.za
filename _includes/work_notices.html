@@ -13,7 +13,7 @@
   {% endif %}
 
   {% unless work.stub %}
-    {% if work.latest_expression %}
+    {% if page.latest_expression %}
       <div class="alert alert-info">
         {% if work.repeal %}
           This is the version of this {{work.type_name}} as it was when it was repealed.
@@ -24,7 +24,7 @@
     {% else %}
       <div class="alert alert-warning">
         This is the version of this {{work.type_name}} as it was from
-        {{work.in_force_from | date:"%e %B %Y" }} to {{work.in_force_to | date:"%e %B %Y" }}.
+        {{page.expression_date | date:"%e %B %Y" }} to {{page.in_force_to | date:"%e %B %Y" }}.
         <a href="{{ work.frbr_uri }}/eng/">
           {% if work.repeal %}
             Read it as it was when it was repealed.

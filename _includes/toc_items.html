@@ -1,6 +1,6 @@
 {% for child in include.items %}
   <li class="{{ child.type }}">
-    <a href="#{{ child.id }}">{{ child.title }}</a>
+    <a href="#{{ child.id | default:child.type }}">{{ child.title }}</a>
 
     {% if child.children %}
       <ol>

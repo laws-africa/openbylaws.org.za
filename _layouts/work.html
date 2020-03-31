@@ -21,11 +21,11 @@ layout: base
       </h1>
       {% unless work.stub %}{% if work.multiple_pits %}
         <h2 class="pt-1">
-          as from {{work.expression_date | date:"%e %B %Y" }}
-          {% if work.latest_expression %}
+          as from {{ page.expression_date | date:"%e %B %Y" }}
+          {% if page.latest_expression %}
             onwards
           {% else %}
-            to {{ work.in_force_to | date:"%e %B %Y" }}
+            to {{ page.in_force_to | date:"%e %B %Y" }}
           {% endif %}
         </h2>
       {% endif %}{% endunless %}
