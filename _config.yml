@@ -9,3 +9,6 @@ plugins:
 - jekyll-redirect-from
 exclude:
 - bin
+- requirements.txt
+- README.md
+- Gemfile*
