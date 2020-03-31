@@ -1,0 +1,45 @@
+<h3>History of this {{ work.subtype_name }}</h3>
+
+<div class="timeline">
+  <ul class="list-unstyled timeline-items">
+    {% for entry in page.history %}
+      <li>
+        <h5>
+          {{ entry.date|date:"%e %B %Y" }}
+          {% if entry.date == work.expression_date %}
+            <span class="badge {% if work.latest_expression %}badge-info{% else %}badge-warning{% endif %}">this version</span>
+          {% endif %}
+        </h5>
+
+        {% for event in entry.events %}
+          <div>
+            {% if event.event == "amendment" %}
+              Amended by
+              <a href="{{ event.amending_uri }}/eng/"><i>{{ event.amending_title }}</i></a>
+
+            {% elsif event.event == "assent" %}
+              Assented to by council.
+
+            {% elsif event.event == "commencement" %}
+              {{work.subtype_name }} commences.
+
+            {% elsif event.event == "publication" %}
+              Published in 
+              <a href="{{ work.publication_document.url }}">{{ work.full_publication }}</a>
+
+            {% elsif event.event == "repeal" %}
+              Repealed by
+              <a href="{{ event.repealing_uri }}/eng/"><i>{{ event.repealing_title }}</i></a>
+            {% endif %}
+          </div>
+        {% endfor %}
+
+        {% if entry.date != work.expression_date %}
+          {% if entry.expression_frbr_uri %}
+            <a class="btn btn-outline-primary mt-2" href="{{ entry.expression_frbr_uri }}">Read this version</a>
+          {% endif %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

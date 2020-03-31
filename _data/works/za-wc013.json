@@ -3,9 +3,11 @@
 		"title": "Advertising and Signage",
 		"frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage",
 		"latest_expression": true,
-		"subtype_name": "by-law"
+		"subtype_name": "by-law",
+		"language": "eng"
 	}, {
 		"title": "bar",
-		"frbr_uri": "/za-wc013/act/by-law/2018/bar"
+		"frbr_uri": "/za-wc013/act/by-law/2018/bar",
+		"language": "eng"
 	}
 ]

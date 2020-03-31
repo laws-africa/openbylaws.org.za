@@ -59,7 +59,7 @@ layout: base
               {% if work.repeal %}{% else %}
                 <tr>
                   <td>
-                    <a href="{{ work.frbr_uri }}/">{{ work.title }}</a>
+                    <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
                   </td>
                   <td class="text-nowrap">{{ work.publication_date }}</td>
                 </tr>
@@ -84,7 +84,7 @@ layout: base
               {% for work in repealed %}
                 <tr>
                   <td>
-                    <a href="{{ work.frbr_uri }}/">{{ work.title }}</a>
+                    <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
                   </td>
                   <td class="text-nowrap">{{ work.publication_date }}</td>
                   <td class="text-nowrap">{{ work.repeal.date }}</td>

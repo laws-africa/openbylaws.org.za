@@ -10,7 +10,7 @@ layout: base
     <div class="header-content">
       <ol class="list-inline breadcrumbs region">
         <li>
-          <a href="{{ place.place_code }}/{{ page.language }}/">{{ place.name }}</a>
+          <a href="/{{ page.place_code }}/{{ page.language }}/">{{ place.name }}</a>
         </li>
       </ol>
       <h1>
@@ -115,11 +115,7 @@ layout: base
             <div class="mt-3">
               <div class="row">
                 <div class="col-sm-8 mb-3">
-                  <h3>History of this By-law</h3>
-
-                  <div class="timeline">
-                    TODO
-                  </div>
+                  {% include work_history.html %}
                 </div>
 
                 <div class="col-sm-4">

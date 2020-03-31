@@ -18,6 +18,12 @@ toc:
   - type: section
     title: 3. Submission of applications
     id: section-3
+history:
+- date: 2013-12-06
+  events:
+  - event: amendment
+    amending_uri: "/za-wc013/act/by-law/2013/advertising-and-signage-amendment"
+    amending_title: "Advertising and Signage: Amendment"
 ---
 
-hi
+the content!
