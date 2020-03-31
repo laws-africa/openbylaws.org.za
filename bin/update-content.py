@@ -26,18 +26,20 @@ indigo = requests.Session()
 indigo.headers['Authorization'] = 'Token ' + INDIGO_AUTH_TOKEN
 
 
-def update_content():
+def update_content(place_codes):
     with open("_data/places.json", "r") as f:
         places = json.load(f)
 
     for place in places:
-        write_place(place)
+        if not place_codes or place['code'] in place_codes:
+            write_place(place)
 
     log.info("Done, bye")
 
 
 def write_place(place):
     works = list_works(place)
+    log.info(f"Got {len(works)} works for {place['code']}")
 
     # TODO: strip some info?
     with open(f"_data/works/{place['code']}.json", "w") as f:
@@ -46,32 +48,33 @@ def write_place(place):
     for work in works:
         write_work(place, work)
 
-    expressions = [
-        exp
-        for w in works
-        for pit in w['points_in_time']
-        for exp in pit['expressions']]
-    languages = list(set(x['language'] for x in expressions))
+    if not place['special']:
+        expressions = [
+            exp
+            for w in works
+            for pit in w['points_in_time']
+            for exp in pit['expressions']]
+        languages = list(set(x['language'] for x in expressions))
 
-    for lang in languages:
-        dirname = os.path.join(place['code'], lang)
-        os.makedirs(dirname, exist_ok=True)
-        metadata = {
-            'title': f"{place['name']} By-laws",
-            'description': f"By-laws for {place['name']}, up-to-date and easy to read and share.",
-            'layout': 'place',
-            'place_code': place['code'],
-            'language': lang,
-        }
+        for lang in languages:
+            dirname = os.path.join(place['code'], lang)
+            os.makedirs(dirname, exist_ok=True)
+            metadata = {
+                'title': f"{place['name']} By-laws",
+                'description': f"By-laws for {place['name']}, up-to-date and easy to read and share.",
+                'layout': 'place',
+                'place_code': place['code'],
+                'language': lang,
+            }
 
-        with open(os.path.join(dirname, 'index.md'), "w") as f:
-            f.write("---\n")
-            yaml.dump(metadata, f)
-            f.write("---\n")
+            with open(os.path.join(dirname, 'index.md'), "w") as f:
+                f.write("---\n")
+                yaml.dump(metadata, f)
+                f.write("---\n")
 
 
 def list_works(place):
-    log.info(f"Loading works from Indigo at {INDIGO_URL}")
+    log.info(f"Loading {place['code']} works from Indigo at {INDIGO_URL}")
     works = []
 
     # walk through everything published on indigo
@@ -85,6 +88,10 @@ def list_works(place):
 
     # only work with commenced works
     works = [w for w in works if w['commenced']]
+
+    # slight tweaks to make templates easier
+    for w in works:
+        w['repealed'] = bool(w['repeal'])
 
     return works
 
@@ -224,4 +231,9 @@ def work_history(work):
 
 
 if __name__ == '__main__':
-    update_content()
+    if len(sys.argv) > 1:
+        place_codes = sys.argv[1:]
+    else:
+        place_codes = []
+
+    update_content(place_codes)

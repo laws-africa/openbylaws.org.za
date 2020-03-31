@@ -14,7 +14,11 @@ extra_js:
     <div class="header-content">
       <ol class="list-inline breadcrumbs region">
         <li>
-          <a href="/{{ page.place_code }}/{{ page.language }}/">{{ place.name }}</a>
+          {% if place.special %}
+            <a href="/covid19/">South Africa COVID-19 Regulations</a>
+          {% else %}
+            <a href="/{{ page.place_code }}/{{ page.language }}/">{{ place.name }}</a>
+          {% endif %}
         </li>
       </ol>
       <h1>
@@ -131,16 +135,18 @@ extra_js:
                     {% include downloads.html %}
                   </div>
 
-                  <h3>{{ place.name }}</h3>
-                  <p>
-                    <a href="{{ place.bylaws_url }}">
-                      <img src="/img/municipalities/{{ place.code }}-logo.png">
-                    </a>
-                  </p>
+                  {% unless place.special %}
+                    <h3>{{ place.name }}</h3>
+                    <p>
+                      <a href="{{ place.bylaws_url }}">
+                        <img src="/img/municipalities/{{ place.code }}-logo.png">
+                      </a>
+                    </p>
 
-                  <p>
-                    <a href="{{ place.bylaws_url }}">{{ place.name }} By-laws Website</a>
-                  </p>
+                    <p>
+                      <a href="{{ place.bylaws_url }}">{{ place.name }} By-laws Website</a>
+                    </p>
+                  {% endunless %}
                 </div>
               </div>
             </div>

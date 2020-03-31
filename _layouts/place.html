@@ -53,21 +53,19 @@ layout: base
             </tr>
           </thead>
           <tbody>
-            {% assign inforce = works | where: "stub", "false" | sort: "title" %}
-            {% for work in inforce %}
-              {% unless work.repeal %}
-                <tr>
-                  <td>
-                    <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
-                  </td>
-                  <td class="text-nowrap">{{ work.publication_date }}</td>
-                </tr>
-              {% endunless %}
+            {% assign nonstubs = works | where: "stub", "false" | where: "repealed", "false" | sort: "title" %}
+            {% for work in nonstubs %}
+              <tr>
+                <td>
+                  <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
+                </td>
+                <td class="text-nowrap">{{ work.publication_date }}</td>
+              </tr>
             {% endfor %}
           </tbody>
         </table>
 
-        {% assign repealed = works | where_exp: "w", "w.repeal" | sort: "title" %}
+        {% assign repealed = works | where: "stub", "false" | where: "repealed", "true" | sort: "title" %}
         {% if repealed %}
           <h4 class="mt-4">Repealed</h4>
 
