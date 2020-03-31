@@ -131,6 +131,7 @@ def process_work(work):
     expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
     work['languages'] = [x['language'] for x in expressions]
     work['multiple_pits'] = len(set(x['expression_date'] for x in expressions)) > 1
+    work['full_publication'] = f"{work['publication_name']} no. {work['publication_number']}"
 
 
 def write_work(place, work):
