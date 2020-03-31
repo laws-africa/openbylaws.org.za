@@ -1,7 +1,9 @@
 [
 	{
 		"title": "Advertising and Signage",
-		"frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage/eng/"
+		"frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage",
+		"latest_expression": true,
+		"subtype_name": "by-law"
 	}, {
 		"title": "bar",
 		"frbr_uri": "/za-wc013/act/by-law/2018/bar"

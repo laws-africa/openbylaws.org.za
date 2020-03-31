@@ -1,0 +1,23 @@
+<div class="alert alert-warning text-center">
+  <p>
+    We don't have the full contents of this #{act.subtype_name} captured.
+  </p>
+
+  {% if work.publication_document.url %}
+    <p>
+      You can download the PDF instead.
+    </p>
+
+    <p>
+      <i class="fa fa-fw fa-download"></i>
+      <a href="{{ work.publication_document.url }}">Download {{work.full_publication}} PDF</a>
+    </p>
+  {% endif %}
+
+  {% unless place.special %}
+    <p>
+      Or visit the
+      <a href="{{ place.bylaws_url }}">{{ place.name }} By-laws Website</a>
+    </p>
+  {% endunless %}
+</div>

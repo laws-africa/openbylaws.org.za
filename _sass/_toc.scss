@@ -1,0 +1,57 @@
+.toc {
+  ol {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 4px;
+  }
+
+  &> ol {
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  li {
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+
+  li.part,
+  li.chapter,
+  li.schedules li.doc {
+    margin-bottom: 10px;
+
+    &> a {
+      font-weight: bold;
+    }
+  }
+}
+
+section.toc {
+  margin-top: 20px;
+}
+
+aside.toc {
+  &.affix {
+    top: 0px;
+    bottom: 0px;
+    width: 219px;
+    margin: 0px;
+    padding: 0px 10px 10px 0px;
+    overflow-y: scroll;
+    border-right: 1px solid #ccc;
+
+    @media (min-width: 992px) {
+      width: 293px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 359px;
+    }
+  }
+
+  &.affix-bottom,
+  &.affix-top {
+    position: relative;
+  }
+}

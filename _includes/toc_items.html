@@ -1,0 +1,11 @@
+{% for child in include.items %}
+  <li class="{{ child.type }}">
+    <a href="#{{ child.id }}">{{ child.title }}</a>
+
+    {% if child.children %}
+      <ol>
+        {% include toc_items.html items=child.children %}
+      </ol>
+    {% endif %}
+  </li>
+{% endfor %}
