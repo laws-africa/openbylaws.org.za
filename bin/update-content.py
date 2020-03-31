@@ -50,7 +50,7 @@ def write_place(place):
     for work in works:
         write_work(place, work)
 
-    if not place['special']:
+    if not place.get('special'):
         expressions = [
             exp
             for w in works
