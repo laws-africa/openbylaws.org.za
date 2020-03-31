@@ -156,8 +156,7 @@ def write_expression(place, expr, use_date, pit_dates):
     html = "<div>" + resp.text + "</div>"
 
     write_images(place, expr, dirname)
-
-    # TODO: pdf, epub
+    write_archive_formats(place, expr, dirname)
 
     with open(fname, "w") as f:
         f.write("---\n")
@@ -191,11 +190,25 @@ def write_images(place, expr, dirname):
             f.write(data)
 
 
+def write_archive_formats(place, expr, dirname):
+    dirname = os.path.join(dirname, 'resources')
+    os.makedirs(dirname, exist_ok=True)
+
+    for fmt in ['pdf', 'epub']:
+        log.info(f"Fetching {fmt}")
+        resp = indigo.get(expr['url'] + "." + fmt)
+
+        # this is a binary string
+        data = resp.content
+        with open(os.path.join(dirname, expr['language'] + '.' + fmt), "wb") as f:
+            f.write(data)
+
+
 def work_toc(work):
     if 'toc' not in work:
         toc = []
         if not work['stub']:
-            log.info(f"Fetching TOC for {work['expression_frbr_uri']}")
+            log.info(f"Fetching TOC")
             resp = indigo.get(work['url'] + '/toc.json', timeout=TIMEOUT)
             resp.raise_for_status()
             toc = resp.json()['toc']
