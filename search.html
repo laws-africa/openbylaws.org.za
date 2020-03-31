@@ -3,8 +3,6 @@ title: Search - Open By-laws South Africa
 layout: base
 extra_js:
 - '/js/vendor/mustache.js'
-- '/js/vendor/spin-2.0.1.min.js'
-- '/js/vendor/ladda-0.9.4.min.js'
 - '/js/search.js'
 ---
 <header>
@@ -24,9 +22,10 @@ extra_js:
         <div class="input-group">
           <input autofocus="autofocus" class="form-control" id="query" name="q" placeholder="What are you looking for?" type="text">
           <div class="input-group-append">
-            <button class="btn btn-primary ladda-button" data-style="expand-right" type="submit">
-              <span class="ladda-label">Search</span>
-              <span class="ladda-spinner"></span></button>
+            <button class="btn btn-primary" type="submit">
+              Search
+              <i class="fas fa-spinner fa-spin d-none"></i>
+            </button>
           </div>
         </div>
       </form>

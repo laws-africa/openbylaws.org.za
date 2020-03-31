@@ -5,7 +5,7 @@ ByLawSearch = function() {
   var $results = $('#search-results');
   var $waiting = $('#search-waiting');
   var template = $('#search-result-tmpl').html();
-  var ladda = Ladda.create($('button[type=submit]', $form)[0]);
+  var $submit = $form.find('button[type=submit]');
   Mustache.parse(template);
   var places = {};
   REGIONS.forEach(function(p) {
@@ -17,7 +17,7 @@ ByLawSearch = function() {
     var region_code = $form.find('input[name=region]').val();
     var params = {};
 
-    ladda.start();
+    $submit.find('.fas').removeClass('d-none');
 
     $results.hide();
     $waiting.show();
@@ -33,7 +33,7 @@ ByLawSearch = function() {
 
     $.getJSON('https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws', params, function(response, textStatus, jqXHR) {
       var hits = [];
-      ladda.stop();
+      $submit.find('.fas').addClass('d-none');
       console.log(response);
 
       response.q = q;
