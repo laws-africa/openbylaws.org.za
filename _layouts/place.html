@@ -16,9 +16,9 @@ layout: base
   <div class="container">
     <div class="row">
       <div class="col-md-9">
-        {% if place_code == 'za' %}{% else %}
+        {% unless place_code == 'za' %}
           {% include covid19_notice.html %}
-        {% endif %}
+        {% endunless %}
 
         {% if place.languages.length > 1 %}
           <div class="lang-changer">
@@ -54,16 +54,16 @@ layout: base
           </thead>
           <tbody>
             TODO: select works for language
-            {% assign inforce = works | sort: "title" %}
+            {% assign inforce = works | where: "stub", "false" | sort: "title" %}
             {% for work in inforce %}
-              {% if work.repeal %}{% else %}
+              {% unless work.repeal %}
                 <tr>
                   <td>
                     <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
                   </td>
                   <td class="text-nowrap">{{ work.publication_date }}</td>
                 </tr>
-              {% endif %}
+              {% endunless %}
             {% endfor %}
           </tbody>
         </table>

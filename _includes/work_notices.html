@@ -7,7 +7,7 @@
     <div class="alert alert-danger">
       <h5>Repealed</h5>
 
-      This {{ work.subtype_name }} was repealed on {{ work.repeal.date | date:"%e %B %Y" }} by
+      This {{ work.type_name }} was repealed on {{ work.repeal.date | date:"%e %B %Y" }} by
       <a href="{{ work.repeal.repealing_uri }}/eng/">{{ work.repeal.repealing_title }}</a>.
     </div>
   {% endif %}
@@ -16,14 +16,14 @@
     {% if work.latest_expression %}
       <div class="alert alert-info">
         {% if work.repeal %}
-          This is the version of this {{work.subtype_name}} as it was when it was repealed.
+          This is the version of this {{work.type_name}} as it was when it was repealed.
         {% else %}
-          This is the latest version of this {{work.subtype_name}}.
+          This is the latest version of this {{work.type_name}}.
         {% endif %}
       </div>
     {% else %}
       <div class="alert alert-warning">
-        This is the version of this {{work.subtype_name}} as it was from
+        This is the version of this {{work.type_name}} as it was from
         {{work.in_force_from | date:"%e %B %Y" }} to {{work.in_force_to | date:"%e %B %Y" }}.
         <a href="{{ work.frbr_uri }}/eng/">
           {% if work.repeal %}

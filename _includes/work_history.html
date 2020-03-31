@@ -1,4 +1,4 @@
-<h3>History of this {{ work.subtype_name }}</h3>
+<h3>History of this {{ work.type_name }}</h3>
 
 <div class="timeline">
   <ul class="list-unstyled timeline-items">
@@ -21,7 +21,7 @@
               Assented to by council.
 
             {% elsif event.event == "commencement" %}
-              {{work.subtype_name }} commences.
+              {{work.type_name }} commences.
 
             {% elsif event.event == "publication" %}
               Published in 

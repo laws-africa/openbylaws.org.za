@@ -1,13 +1,3373 @@
 [
-	{
-		"title": "Advertising and Signage",
-		"frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage",
-		"latest_expression": true,
-		"subtype_name": "by-law",
-		"language": "eng"
-	}, {
-		"title": "bar",
-		"frbr_uri": "/za-wc013/act/by-law/2018/bar",
-		"language": "eng"
-	}
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "1994-11-11",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "1994-11-11",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-18T07:14:28.964848Z",
+    "custom_properties": [],
+    "expression_date": "1994-11-11",
+    "expression_frbr_uri": "/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11",
+    "frbr_uri": "/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "levying-of-availability-charge-for-sewerage-velddrif",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "1994-11-11",
+        "expressions": [
+          {
+            "expression_date": "1994-11-11",
+            "expression_frbr_uri": "/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11",
+            "language": "eng",
+            "title": "Levying of an Availability Charge for Sewerage (Municipal Council of Velddrif)",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11"
+          }
+        ]
+      }
+    ],
+    "publication_date": "1994-11-11",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-1994-levying-of-availability-charge-for-sewerage-velddrif-publication-document.pdf",
+      "mime_type": "application/pdf",
+      "size": 10530745,
+      "url": "https://edit.laws.africa/works/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/media/publication/za-wc013-act-by-law-1994-levying-of-availability-charge-for-sewerage-velddrif-publication-document.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "4889",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Levying of an Availability Charge for Sewerage (Municipal Council of Velddrif)",
+    "type_name": "By-law",
+    "updated_at": "2020-03-18T07:14:28.964867Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11",
+    "year": "1994"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "1998-09-25",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "1998-09-25",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-05T13:22:43.601175Z",
+    "custom_properties": [],
+    "expression_date": "1998-09-25",
+    "expression_frbr_uri": "/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25",
+    "frbr_uri": "/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "1998-09-25",
+        "expressions": [
+          {
+            "expression_date": "1998-09-25",
+            "expression_frbr_uri": "/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25",
+            "language": "eng",
+            "title": "Dilapidated Buildings and Unsightly and Objectionable Structures (Piketberg Municipal Council)",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25"
+          }
+        ]
+      }
+    ],
+    "publication_date": "1998-09-25",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-1998-dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg-publication-document.pdf",
+      "mime_type": "application/pdf",
+      "size": 17655627,
+      "url": "https://edit.laws.africa/works/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/media/publication/za-wc013-act-by-law-1998-dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg-publication-document.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "5288",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Dilapidated Buildings and Unsightly and Objectionable Structures (Piketberg Municipal Council)",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.191652Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25",
+    "year": "1998"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "1998-09-25",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "1998-09-25",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-06T12:14:40.276231Z",
+    "custom_properties": [],
+    "expression_date": "1998-09-25",
+    "expression_frbr_uri": "/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25",
+    "frbr_uri": "/za-wc013/act/by-law/1998/keeping-of-bees-piketberg",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "keeping-of-bees-piketberg",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "1998-09-25",
+        "expressions": [
+          {
+            "expression_date": "1998-09-25",
+            "expression_frbr_uri": "/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25",
+            "language": "eng",
+            "title": "Keeping of Bees (Municipal Council of Piketberg)",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25"
+          }
+        ]
+      }
+    ],
+    "publication_date": "1998-09-25",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-1998-keeping-of-bees-piketberg-publication-document.pdf",
+      "mime_type": "application/pdf",
+      "size": 17655627,
+      "url": "https://edit.laws.africa/works/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/media/publication/za-wc013-act-by-law-1998-keeping-of-bees-piketberg-publication-document.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "5288",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Keeping of Bees (Municipal Council of Piketberg)",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.222965Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25",
+    "year": "1998"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "1998-10-01",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "1998-10-01",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-02-07T14:52:57.128709Z",
+    "custom_properties": [],
+    "expression_date": "1998-09-25",
+    "expression_frbr_uri": "/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25",
+    "frbr_uri": "/za-wc013/act/by-law/1998/shop-trolleys-piketberg",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "shop-trolleys-piketberg",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "1998-09-25",
+        "expressions": [
+          {
+            "expression_date": "1998-09-25",
+            "expression_frbr_uri": "/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25",
+            "language": "eng",
+            "title": "Shop Trolleys (Municipal Council of Piketberg)",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25"
+          }
+        ]
+      }
+    ],
+    "publication_date": "1998-09-25",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-1998-shop-trolleys-piketberg-publication-document.pdf",
+      "mime_type": "application/pdf",
+      "size": 17655627,
+      "url": "https://edit.laws.africa/works/za-wc013/act/by-law/1998/shop-trolleys-piketberg/media/publication/za-wc013-act-by-law-1998-shop-trolleys-piketberg-publication-document.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "5288",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Shop Trolleys (Municipal Council of Piketberg)",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:24.477412Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25",
+    "year": "1998"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "1998-09-25",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "1998-09-25",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-08T10:03:59.832623Z",
+    "custom_properties": [],
+    "expression_date": "1998-09-25",
+    "expression_frbr_uri": "/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25",
+    "frbr_uri": "/za-wc013/act/by-law/1998/swimming-bath",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "swimming-bath",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "1998-09-25",
+        "expressions": [
+          {
+            "expression_date": "1998-09-25",
+            "expression_frbr_uri": "/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25",
+            "language": "eng",
+            "title": "Swimming Bath (Municipal Council of Piketberg)",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25"
+          }
+        ]
+      }
+    ],
+    "publication_date": "1998-09-25",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-1998-swimming-bath-publication-document.pdf",
+      "mime_type": "application/pdf",
+      "size": 17655627,
+      "url": "https://edit.laws.africa/works/za-wc013/act/by-law/1998/swimming-bath/media/publication/za-wc013-act-by-law-1998-swimming-bath-publication-document.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "5288",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Swimming Bath (Municipal Council of Piketberg)",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.500184Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25",
+    "year": "1998"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "1998-09-25",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "1998-09-25",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-05T13:40:37.813293Z",
+    "custom_properties": [],
+    "expression_date": "1998-09-25",
+    "expression_frbr_uri": "/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25",
+    "frbr_uri": "/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "1998-09-25",
+        "expressions": [
+          {
+            "expression_date": "1998-09-25",
+            "expression_frbr_uri": "/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25",
+            "language": "eng",
+            "title": "Vessels, Trailors, Boats, or any Towing or Sailing Equipment on Vacant Land (Piketberg Municipal Council)",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25"
+          }
+        ]
+      }
+    ],
+    "publication_date": "1998-09-25",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-1998-vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg-publication-document.pdf",
+      "mime_type": "application/pdf",
+      "size": 17655627,
+      "url": "https://edit.laws.africa/works/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/media/publication/za-wc013-act-by-law-1998-vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg-publication-document.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "5288",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Vessels, Trailors, Boats, or any Towing or Sailing Equipment on Vacant Land (Piketberg Municipal Council)",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.362206Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25",
+    "year": "1998"
+  },
+  {
+    "amendments": [
+      {
+        "amending_title": "Advertising and Signage: Amendment",
+        "amending_uri": "/za-wc013/act/by-law/2013/advertising-and-signage-amendment",
+        "date": "2013-12-06"
+      }
+    ],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-17T09:20:17.806627Z",
+    "custom_properties": [],
+    "expression_date": "2013-12-06",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06",
+    "frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage",
+    "language": "eng",
+    "languages": [
+      "eng",
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "advertising-and-signage",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage/eng@2009-11-09",
+            "language": "eng",
+            "title": "Advertising and Signage",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2009-11-09"
+          }
+        ]
+      },
+      {
+        "date": "2013-12-06",
+        "expressions": [
+          {
+            "expression_date": "2013-12-06",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06",
+            "language": "eng",
+            "title": "Advertising and Signage",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-advertising-and-signage-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Advertising and Signage",
+    "type_name": "By-law",
+    "updated_at": "2020-03-17T09:20:17.806647Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:54:49.622861Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/cemeteries-and-crematoria",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "cemeteries-and-crematoria",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09",
+            "language": "eng",
+            "title": "Cemeteries and Crematoria",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-cemeteries-and-crematoria-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Cemeteries and Crematoria",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:20.885900Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:57:06.503772Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/commonage/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/commonage",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "commonage",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/commonage/eng@2009-11-09",
+            "language": "eng",
+            "title": "Commonage",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-commonage-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Commonage",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:20.816692Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/commonage/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-11T13:07:47.222870Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "credit-control-tariffs-debt-collection",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09",
+            "language": "eng",
+            "title": "Credit Control, Tariffs and Debt Collection",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-credit-control-tariffs-debt-collection-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Credit Control, Tariffs and Debt Collection",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:41.625046Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:59:16.107014Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/electricity-supply",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "electricity-supply",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09",
+            "language": "eng",
+            "title": "Electricity Supply",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-electricity-supply-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Electricity Supply",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:20.776550Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T14:50:08.795098Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/fences-and-walls",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "fences-and-walls",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09",
+            "language": "eng",
+            "title": "Fences and Walls",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-fences-and-walls-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Fences and Walls",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:20.727783Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T14:45:59.013815Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/impoundment-of-animals",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "impoundment-of-animals",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09",
+            "language": "eng",
+            "title": "Impoundment of Animals",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-impoundment-of-animals-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Impoundment of Animals",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:17.529309Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:56:43.899346Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/informal-trading",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "informal-trading",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09",
+            "language": "eng",
+            "title": "Informal Trading",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-informal-trading-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Informal Trading",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:20.693921Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:38:05.164164Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09",
+            "language": "eng",
+            "title": "Prevention of Public Nuisances and Public Nuisances arising from the Keeping of Animals",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Prevention of Public Nuisances and Public Nuisances arising from the Keeping of Animals",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:24.381093Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T14:00:03.946820Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/public-amenities",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "public-amenities",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09",
+            "language": "eng",
+            "title": "Public Amenities",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-public-amenities-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Public Amenities",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.096765Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T14:00:18.033939Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/public-buses-and-taxis",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "public-buses-and-taxis",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09",
+            "language": "eng",
+            "title": "Public Buses and Taxis",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-public-buses-and-taxis-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Public Buses and Taxis",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.542382Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:55:39.508730Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/roads-and-streets",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "roads-and-streets",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09",
+            "language": "eng",
+            "title": "Roads and Streets",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-roads-and-streets-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Roads and Streets",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.321549Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:58:15.353562Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/solid-waste-disposal",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "solid-waste-disposal",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09",
+            "language": "eng",
+            "title": "Solid Waste Disposal",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-solid-waste-disposal-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Solid Waste Disposal",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.266720Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:57:27.489987Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/sporting-facilities",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "sporting-facilities",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09",
+            "language": "eng",
+            "title": "Sporting Facilities",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-sporting-facilities-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Sporting Facilities",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:19.067968Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:57:48.620252Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/stormwater-management",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "stormwater-management",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09",
+            "language": "eng",
+            "title": "Stormwater Management",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-stormwater-management-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Stormwater Management",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:24.084270Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2009-11-09",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2009-11-09",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:34:45.783356Z",
+    "custom_properties": [],
+    "expression_date": "2009-11-09",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09",
+    "frbr_uri": "/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "water-supply-sanitation-services-industrial-effluent",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2009-11-09",
+        "expressions": [
+          {
+            "expression_date": "2009-11-09",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09",
+            "language": "eng",
+            "title": "Water Supply, Sanitation Services and Industrial Effluent",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2009-11-09",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2009-water-supply-sanitation-services-industrial-effluent-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "6675",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Water Supply, Sanitation Services and Industrial Effluent",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:48.826313Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09",
+    "year": "2009"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2012-07-01",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2012-07-01",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:52:17.402851Z",
+    "custom_properties": [],
+    "expression_date": "2012-06-08",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08",
+    "frbr_uri": "/za-wc013/act/by-law/2012/property-rates",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "property-rates",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2012-06-08",
+        "expressions": [
+          {
+            "expression_date": "2012-06-08",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08",
+            "language": "eng",
+            "title": "Property Rates",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2012-06-08",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2012-property-rates-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2012/provincial-gazette-ZA-WC-no-7003-dated-2012-06-08.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "7003",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Property Rates",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:18.942076Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08",
+    "year": "2012"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2013-12-06",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2013-12-06",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-04T09:47:55.997530Z",
+    "custom_properties": [],
+    "expression_date": "2013-12-06",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2013/advertising-and-signage-amendment/eng@2013-12-06",
+    "frbr_uri": "/za-wc013/act/by-law/2013/advertising-and-signage-amendment",
+    "language": "eng",
+    "languages": [],
+    "latest_expression": true,
+    "links": [],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "advertising-and-signage-amendment",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [],
+    "publication_date": "2013-12-06",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2013-advertising-and-signage-amendment-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2013/provincial-gazette-ZA-WC-no-7208-dated-2013-12-06.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "7208",
+    "repeal": null,
+    "stub": true,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Advertising and Signage: Amendment",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:20.660700Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/advertising-and-signage-amendment/eng@2013-12-06",
+    "year": "2013"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2013-12-06",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2013-12-06",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:42:58.343305Z",
+    "custom_properties": [],
+    "expression_date": "2013-12-06",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06",
+    "frbr_uri": "/za-wc013/act/by-law/2013/air-pollution-control",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "air-pollution-control",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2013-12-06",
+        "expressions": [
+          {
+            "expression_date": "2013-12-06",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06",
+            "language": "eng",
+            "title": "Air Pollution Control",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2013-12-06",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2013-air-pollution-control-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2013/provincial-gazette-ZA-WC-no-7208-dated-2013-12-06.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "7208",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Air Pollution Control",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:47.755819Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06",
+    "year": "2013"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2016-06-24",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2016-06-24",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-17T07:56:14.938616Z",
+    "custom_properties": [],
+    "expression_date": "2016-06-24",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24",
+    "frbr_uri": "/za-wc013/act/by-law/2016/fire-safety",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "fire-safety",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2016-06-24",
+        "expressions": [
+          {
+            "expression_date": "2016-06-24",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24",
+            "language": "eng",
+            "title": "Fire Safety",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2016-06-24",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2016-fire-safety-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2016/provincial-gazette-ZA-WC-no-7637-dated-2016-06-24.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "7637",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Fire Safety",
+    "type_name": "By-law",
+    "updated_at": "2020-03-17T07:56:15.417537Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24",
+    "year": "2016"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2016-06-17",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2016-06-17",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-17T09:10:04.668569Z",
+    "custom_properties": [],
+    "expression_date": "2016-06-17",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17",
+    "frbr_uri": "/za-wc013/act/by-law/2016/integrated-zoning-scheme",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "integrated-zoning-scheme",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2016-06-17",
+        "expressions": [
+          {
+            "expression_date": "2016-06-17",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17",
+            "language": "eng",
+            "title": "Integrated Zoning Scheme",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2016-06-17",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2016-integrated-zoning-scheme-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2016/provincial-gazette-ZA-WC-no-7629-dated-2016-06-17.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "7629",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Integrated Zoning Scheme",
+    "type_name": "By-law",
+    "updated_at": "2020-03-17T09:10:05.380104Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17",
+    "year": "2016"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2018-12-07",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2018-12-07",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:56:19.995006Z",
+    "custom_properties": [],
+    "expression_date": "2018-12-07",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07",
+    "frbr_uri": "/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "control-of-undertakings-that-sell-liquor-to-the-public",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2018-12-07",
+        "expressions": [
+          {
+            "expression_date": "2018-12-07",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07",
+            "language": "eng",
+            "title": "Control of Undertakings that Sell Liquor to the Public",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2018-12-07",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2018-control-of-undertakings-that-sell-liquor-to-the-public-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2018/provincial-gazette-ZA-WC-no-8015-dated-2018-12-07.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "8015",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Control of Undertakings that Sell Liquor to the Public",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:19.013846Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07",
+    "year": "2018"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2018-04-06",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2018-04-06",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T14:48:06.143639Z",
+    "custom_properties": [],
+    "expression_date": "2018-04-06",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06",
+    "frbr_uri": "/za-wc013/act/by-law/2018/municipal-land-use-planning",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "municipal-land-use-planning",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2018-04-06",
+        "expressions": [
+          {
+            "expression_date": "2018-04-06",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06",
+            "language": "eng",
+            "title": "Municipal Land Use Planning",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2018-04-06",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2018-municipal-land-use-planning-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2018/provincial-gazette-ZA-WC-no-7910-dated-2018-04-06.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "7910",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Municipal Land Use Planning",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.022709Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06",
+    "year": "2018"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2018-07-13",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2018-07-13",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2019-09-10T13:43:49.919321Z",
+    "custom_properties": [],
+    "expression_date": "2018-07-13",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13",
+    "frbr_uri": "/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "rules-of-order-for-the-conduct-of-meetings-of-the-council",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2018-07-13",
+        "expressions": [
+          {
+            "expression_date": "2018-07-13",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13",
+            "language": "eng",
+            "title": "Rules of Order for the Conduct of Meetings of the Council",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2018-07-13",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2018-rules-of-order-for-the-conduct-of-meetings-of-the-council-of-bergrivier-municipality-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2018/provincial-gazette-ZA-WC-no-7957-dated-2018-07-13.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "7957",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Rules of Order for the Conduct of Meetings of the Council",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:18.907033Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13",
+    "year": "2018"
+  },
+  {
+    "amendments": [],
+    "as_at_date": "2020-03-10",
+    "assent_date": null,
+    "commenced": true,
+    "commencement_date": "2019-09-01",
+    "commencements": [
+      {
+        "all_provisions": true,
+        "commencing_frbr_uri": null,
+        "commencing_title": null,
+        "date": "2019-09-01",
+        "main": true,
+        "provisions": []
+      }
+    ],
+    "commencing_work": null,
+    "country": "za",
+    "created_at": "2020-03-05T14:03:15.305716Z",
+    "custom_properties": [],
+    "expression_date": "2019-07-05",
+    "expression_frbr_uri": "/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05",
+    "frbr_uri": "/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary",
+    "language": "eng",
+    "languages": [
+      "eng"
+    ],
+    "latest_expression": true,
+    "links": [
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05.html",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05.html?standalone=1",
+        "mediaType": "text/html",
+        "rel": "alternate",
+        "title": "Standalone HTML"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05.xml",
+        "mediaType": "application/xml",
+        "rel": "alternate",
+        "title": "Akoma Ntoso"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05.pdf",
+        "mediaType": "application/pdf",
+        "rel": "alternate",
+        "title": "PDF"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05.epub",
+        "mediaType": "application/epub+zip",
+        "rel": "alternate",
+        "title": "ePUB"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05/toc.json",
+        "mediaType": "application/json",
+        "rel": "toc",
+        "title": "Table of Contents"
+      },
+      {
+        "href": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05/media.json",
+        "mediaType": "application/json",
+        "rel": "media",
+        "title": "Media"
+      }
+    ],
+    "locality": "wc013",
+    "nature": "act",
+    "number": "management-and-use-of-the-berg-river-estuary",
+    "numbered_title": null,
+    "parent_work": null,
+    "points_in_time": [
+      {
+        "date": "2019-07-05",
+        "expressions": [
+          {
+            "expression_date": "2019-07-05",
+            "expression_frbr_uri": "/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05",
+            "language": "eng",
+            "title": "Management and Use of the Berg River Estuary",
+            "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05"
+          }
+        ]
+      }
+    ],
+    "publication_date": "2019-07-05",
+    "publication_document": {
+      "filename": "za-wc013-act-by-law-2019-management-and-use-of-the-berg-river-estuary-publication-document.pdf",
+      "mime_type": "",
+      "size": null,
+      "url": "https://archive.opengazettes.org.za/archive/ZA-WC/2019/provincial-gazette-ZA-WC-no-8124-dated-2019-07-05.pdf"
+    },
+    "publication_name": "Western Cape Provincial Gazette",
+    "publication_number": "8124",
+    "repeal": null,
+    "stub": false,
+    "subtype": "by-law",
+    "taxonomies": [],
+    "title": "Management and Use of the Berg River Estuary",
+    "type_name": "By-law",
+    "updated_at": "2020-03-10T17:51:21.660967Z",
+    "url": "https://api.laws.africa/v1/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05",
+    "year": "2019"
+  }
 ]
