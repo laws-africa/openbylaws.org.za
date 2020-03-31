@@ -91,9 +91,17 @@ def list_works(place):
 
     # slight tweaks to make templates easier
     for w in works:
-        w['repealed'] = bool(w['repeal'])
+        process_work(w)
 
     return works
+
+
+def process_work(work):
+    work['repealed'] = bool(work['repeal'])
+
+    expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
+    work['languages'] = [x['language'] for x in expressions]
+    work['multiple_pits'] = len(set(x['expression_date'] for x in expressions)) > 1
 
 
 def write_work(place, work):
@@ -102,18 +110,15 @@ def write_work(place, work):
     log.info(f"Writing {work['frbr_uri']}")
 
     expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
-    pits = len(set(x['expression_date'] for x in expressions))
-    work['languages'] = [x['language'] for x in expressions]
 
     # point-in-time dates
     dates = sorted(list(set(x['date'] for x in work['amendments'])))
 
     # do the current one
-    multiple_pits = work['multiple_pits'] = pits > 1
     write_expression(place, work, False, dates)
 
-    if pits > 1:
-        log.info(f"{pits} points in time")
+    if work['multiple_pits']:
+        log.info(f"Multiple points in time")
         # only write date-specific points in time if there are multiple
         # points in time
         write_expression(place, work, True, dates)
@@ -125,10 +130,10 @@ def write_work(place, work):
             resp = indigo.get(expr['url'] + '.json', timeout=TIMEOUT)
             resp.raise_for_status()
             expr = resp.json()
-            write_expression(place, expr, pits > 1, dates)
+            write_expression(place, expr, work['multiple_pits'], dates)
 
 
-def write_expression(place, expr, use_date, pit_dates):
+def write_expression(place, expr, use_date, dates):
     dirname = expr['frbr_uri'][1:] + '/' + expr['language']
     if use_date:
         dirname += '@' + expr['expression_date']
@@ -146,15 +151,15 @@ def write_expression(place, expr, use_date, pit_dates):
         "place_code": place['code'],
         "toc": work_toc(expr),
         "history": work_history(expr),
-        "latest_expression": not pit_dates or expr['expression_date'] == pit_dates[-1],
+        "latest_expression": not dates or expr['expression_date'] == dates[-1],
     }
 
-    if pit_dates:
+    if dates:
         # find the next date after in_force_from
-        ix = bisect.bisect_left(pit_dates, expr['expression_date'])
-        if ix < len(pit_dates) - 1:
+        ix = bisect.bisect_right(dates, expr['expression_date'])
+        if ix < len(dates):
             # subtract one day
-            date = datetime.strptime(pit_dates[ix + 1], '%Y-%m-%d').date() - timedelta(days=1)
+            date = datetime.strptime(dates[ix], '%Y-%m-%d').date() - timedelta(days=1)
             metadata['in_force_to'] = date.strftime('%Y-%m-%d')
 
     resp = indigo.get(expr['url'] + '.html', timeout=TIMEOUT)

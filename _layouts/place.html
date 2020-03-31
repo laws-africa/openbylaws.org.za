@@ -49,7 +49,8 @@ layout: base
           <thead class="thead-light">
             <tr>
               <th>Title</th>
-              <th>First Published</th>
+              <th>Published</th>
+              <th>Updated</th>
             </tr>
           </thead>
           <tbody>
@@ -60,6 +61,11 @@ layout: base
                   <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
                 </td>
                 <td class="text-nowrap">{{ work.publication_date }}</td>
+                <td class="text-nowrap">
+                  {% if work.expression_date != work.publication_date %}
+                    {{ work.expression_date }}
+                  {% endif %}
+                </td>
               </tr>
             {% endfor %}
           </tbody>
@@ -73,7 +79,7 @@ layout: base
             <thead class="thead-light">
               <tr>
                 <th>Title</th>
-                <th>First Published</th>
+                <th>Published</th>
                 <th>Repealed</th>
               </tr>
             </thead>
