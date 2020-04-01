@@ -2,3 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
+
+# ignore by-law data
+_data/works/*
