@@ -14,5 +14,6 @@ deploy:
   target_branch: "gh-pages"
   skip_cleanup: true
   github_token: "$GITHUB_TOKEN"
+  fqdn: openbylaws.org.za
   on:
     branch: master
