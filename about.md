@@ -100,6 +100,9 @@ title: About
           <li>
             Photo of <a href="https://www.flickr.com/photos/sa-venues/3862797198">Cederberg by SA-Venues.com on flickr</a>
           </li>
+          <li>
+            Photo of <a href="https://www.flickr.com/photos/robwallace/2249636397">Photo of Calitzdorp in Kannaland by Robert Wallace on flickr</a>
+          </li>
         </ul>
       </div>
     </div>
