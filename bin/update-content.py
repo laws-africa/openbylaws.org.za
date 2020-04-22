@@ -132,6 +132,7 @@ def process_work(work):
     work['languages'] = [x['language'] for x in expressions]
     work['multiple_pits'] = len(set(x['expression_date'] for x in expressions)) > 1
     work['full_publication'] = f"{work['publication_name']} no. {work['publication_number']}"
+    work['has_parent'] = bool(work['parent_work'])
 
 
 def write_work(place, work):

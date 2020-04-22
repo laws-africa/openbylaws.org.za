@@ -29,7 +29,7 @@ description: COVID-19 Regulations for South Africa, up-to-date and easy to read 
         </tr>
       </thead>
       <tbody>
-        {% assign works = site.data.works.za | where: "stub", "false" | where: "repealed", "false" %}
+        {% assign works = site.data.works.za | where: "stub", "false" | where: "repealed", "false" | where: "has_parent", "true" %}
         {% assign groups = works | group_by: "parent_work.title" | sort: "name" %}
 
         {% for group in groups %}
