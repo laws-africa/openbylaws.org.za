@@ -102,12 +102,14 @@ def process_work(work):
     # strip some info
     KEEP = """
         amendments
+        as_at_date
         assent_date
         commencement_date
         expression_date
         expression_frbr_uri
         frbr_uri
         language
+        numbered_title
         parent_work
         points_in_time
         publication_date

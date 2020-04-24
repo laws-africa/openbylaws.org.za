@@ -20,6 +20,9 @@ description: COVID-19 Regulations for South Africa, up-to-date and easy to read 
 
     <p>For more information and resources on COVID-19, please visit <a href="https://sacoronavirus.co.za/">sacoronavirus.co.za</a>.</p>
 
+    {% assign latest_work = site.data.works.za | sort: "as_at_date" | last %}
+    <p><b>Last updated: {{ latest_work.as_at_date|date:"%Y-%m-%d" }}</b></p>
+
     <table class="table table-sm table-hover sticky-thead">
       <thead class="thead-light">
         <tr>
@@ -42,6 +45,9 @@ description: COVID-19 Regulations for South Africa, up-to-date and easy to read 
             <tr>
               <td>
                 <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
+                {% if work.numbered_title %}
+                · <span class="text-muted">{{ work.numbered_title }}</span>
+                {% endif %}
               </td>
               <td class="text-nowrap">{{ work.publication_date }}</td>
               <td class="text-nowrap">
@@ -72,6 +78,9 @@ description: COVID-19 Regulations for South Africa, up-to-date and easy to read 
             <tr>
               <td>
                 <a href="{{ work.frbr_uri }}/{{ work.language }}/">{{ work.title }}</a>
+                {% if work.numbered_title %}
+                · <span class="text-muted">{{ work.numbered_title }}</span>
+                {% endif %}
               </td>
               <td class="text-nowrap">{{ work.publication_date }}</td>
               <td class="text-nowrap">{{ work.repeal.date }}</td>
