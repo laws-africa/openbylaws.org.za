@@ -27,8 +27,11 @@ extra_js:
           <span class="badge badge-danger">repealed</span>
         {% endif %}
       </h1>
+      {% if work.numbered_title %}
+        <h2 class="text-muted mt-1">{{ work.numbered_title }}</h2>
+      {% endif %}
       {% unless work.stub %}{% if work.multiple_pits %}
-        <h2 class="pt-1">
+        <h2 class="mt-1">
           as from {{ page.expression_date | date:"%e %B %Y" }}
           {% if page.latest_expression %}
             onwards
