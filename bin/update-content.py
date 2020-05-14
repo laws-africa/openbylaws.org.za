@@ -19,7 +19,7 @@ TIMEOUT = 30
 SETTINGS = {}
 
 # Indigo's API configuration
-INDIGO_URL = 'https://api.laws.africa/v1'
+INDIGO_URL = 'https://api.laws.africa/v2'
 INDIGO_AUTH_TOKEN = os.environ.get('INDIGO_API_AUTH_TOKEN')
 if not INDIGO_AUTH_TOKEN:
     log.error("INDIGO_AUTH_TOKEN environment variable is not set.")
@@ -27,6 +27,19 @@ if not INDIGO_AUTH_TOKEN:
 
 indigo = requests.Session()
 indigo.headers['Authorization'] = 'Token ' + INDIGO_AUTH_TOKEN
+
+
+def remove_akn(work):
+    # remove /akn/
+    work['frbr_uri'] = work['frbr_uri'][4:]
+    work['expression_frbr_uri'] = work['expression_frbr_uri'][4:]
+
+    if work['repeal']:
+        work['repeal']['repealing_uri'] = work['repeal']['repealing_uri'][4:]
+
+    if work['amendments']:
+        for info in work['amendments']:
+            info['amending_uri'] = info['amending_uri'][4:]
 
 
 def update_content(place_codes):
@@ -80,7 +93,7 @@ def list_works(place):
     works = []
 
     # walk through everything published on indigo
-    url = f"/{place['code']}/.json"
+    url = f"/akn/{place['code']}/.json"
     while url:
         resp = indigo.get(INDIGO_URL + url, timeout=TIMEOUT)
         resp.raise_for_status()
@@ -129,6 +142,7 @@ def process_work(work):
             del work[key]
 
     work['repealed'] = bool(work['repeal'])
+    remove_akn(work)
 
     expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
     work['languages'] = [x['language'] for x in expressions]
@@ -163,6 +177,7 @@ def write_work(place, work):
             resp = indigo.get(expr['url'] + '.json', timeout=TIMEOUT)
             resp.raise_for_status()
             expr = resp.json()
+            remove_akn(expr)
             write_expression(place, work, expr, work['multiple_pits'], dates)
 
 
@@ -199,6 +214,8 @@ def write_expression(place, work, expr, use_date, dates):
     resp.raise_for_status()
     # wrap in DIV tags so that markdown doesn't get confused
     html = "<div>" + resp.text + "</div>"
+    # rewrite /akn references
+    html = html.replace('href="/akn/', 'href="/')
 
     with open(fname, "w") as f:
         f.write("---\n")
@@ -325,7 +342,9 @@ def work_history(work, language):
     for event in events:
         for e in event['events']:
             del e['date']
-        event['expression_frbr_uri'] = expressions.get(event['date'], {}).get('expression_frbr_uri')
+        uri = expressions.get(event['date'], {}).get('expression_frbr_uri')
+        if uri:
+            event['expression_frbr_uri'] = uri[4:]
 
     # sort groups
     events.sort(key=lambda e: e['date'], reverse=True)
