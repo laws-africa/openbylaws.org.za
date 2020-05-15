@@ -1,14 +1,13 @@
----
-title: Open By-laws South Africa
-timezone: Africa/Johannesburg
-description: "South Africa's by-laws: freely available, easy to read and share."
-baseurl: 
-url: https://openbylaws.org.za
-markdown: kramdown
-plugins:
-- jekyll-redirect-from
+baseurl: null
+description: 'South Africa''s by-laws: freely available, easy to read and share.'
 exclude:
 - bin
 - requirements.txt
 - README.md
 - Gemfile*
+markdown: kramdown
+plugins:
+- jekyll-redirect-from
+timezone: Africa/Johannesburg
+title: Open By-laws South Africa
+url: https://capeagulhas.openbylaws.org.za
