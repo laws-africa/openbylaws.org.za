@@ -1,7 +1,6 @@
 ---
 layout: base
 ---
-{% assign works = site.data.works[page.place_code] %}
 {% assign place = site.data.places|where: "code", page.place_code|first %}
 
 <header>
@@ -20,14 +19,14 @@ layout: base
           {% include covid19_notice.html %}
         {% endunless %}
 
-        {% if place.languages.length > 1 %}
+        {% if page.languages.size > 1 %}
           <div class="lang-changer">
             Change language:
 
             <ul class="list-inline">
-              {% for lang in region.languages %}
-                <li>
-                  <a href="/{{ place.place_code }}/{{ lang.code }}/" class="{% if page.language == lang.code %}text-muted{% endif %}">{{ lang.name }}</a>
+              {% for lang in page.languages %}
+                <li class="list-inline-item">
+                  <a href="/{% if lang.code != 'eng' %}{{ lang.code }}/{% endif %}" class="{% if page.language == lang.code %}text-muted{% endif %}">{{ lang.name }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -54,7 +53,7 @@ layout: base
             </tr>
           </thead>
           <tbody>
-            {% assign nonstubs = works | where: "stub", "false" | where: "repealed", "false" | sort: "title" %}
+            {% assign nonstubs = page.expressions | where: "repealed", "false" | sort: "title" %}
             {% for work in nonstubs %}
               <tr>
                 <td>
@@ -71,8 +70,8 @@ layout: base
           </tbody>
         </table>
 
-        {% assign repealed = works | where: "stub", "false" | where: "repealed", "true" | sort: "title" %}
-        {% if repealed %}
+        {% assign repealed = page.expressions | where: "repealed", "true" | sort: "title" %}
+        {% if repealed.size > 0 %}
           <h4 class="mt-4">Repealed</h4>
 
           <table class="table table-sm table-hover">

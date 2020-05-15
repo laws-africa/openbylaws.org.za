@@ -77,6 +77,20 @@ extra_js:
 
 <article>
   <div class="container">
+    {% if page.languages.size > 1 %}
+      <div class="lang-changer">
+        Change language:
+
+        <ul class="list-inline">
+          {% for lang in page.languages %}
+            <li class="list-inline-item">
+              <a href="../{{ lang.code }}{% unless page.latest_expression %}@{{ page.expression_date }}{% endunless %}/" class="{% if page.language == lang.code %}text-muted{% endif %}">{{ lang.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
     <div id="notices">
       {% include work_notices.html %}
     </div>
@@ -108,7 +122,7 @@ extra_js:
 
             </div>
             <div class="col-md-8">
-              <article class="akoma-ntoso akoma-ntoso-container" id="top">
+              <article class="akoma-ntoso akoma-ntoso-container" id="top" lang="{{ page.language2 }}">
                 {{ content }}
               </article>
             </div>
