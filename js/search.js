@@ -28,7 +28,7 @@ ByLawSearch = function() {
     };
     
     if (region_code) {
-      params.frbr_uri__startswith = '/za-' + region_code + '/';
+      params.frbr_uri__startswith = '/' + region_code + '/';
     }
 
     $.getJSON('https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws', params, function(response, textStatus, jqXHR) {
@@ -38,7 +38,7 @@ ByLawSearch = function() {
 
       response.q = q;
       response.results.forEach(function(result) {
-        result.region = places[result.locality];
+        result.region = places['za-' + result.locality];
 
         // only keep those with a region
         if (result.region) {
