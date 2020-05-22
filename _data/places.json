@@ -1,22 +1,22 @@
 [
   {
-    "bylaws-url": " http://www.capetown.gov.za/bylaws",
+    "bylaws_url": " http://www.capetown.gov.za/bylaws",
     "code": "za-cpt",
     "name": "Cape Town"
   },
   {
-    "bylaws-url": "http://www.durban.gov.za/Resource_Centre/Pages/By-Laws.aspx",
+    "bylaws_url": "http://www.durban.gov.za/Resource_Centre/Pages/By-Laws.aspx",
     "code": "za-eth",
     "name": "eThekwini"
   },
   {
-    "bylaws-url": "https://www.joburg.org.za/documents_/By-Laws/Pages/By-Laws.aspx",
+    "bylaws_url": "https://www.joburg.org.za/documents_/By-Laws/Pages/By-Laws.aspx",
     "code": "za-jhb",
     "name": "Johannesburg"
   },
   {
     "bucket": "capeagulhas.openbylaws.org.za",
-    "bylaws-url": "http://www.capeagulhas.org/resource-category/policies-and-laws",
+    "bylaws_url": "http://www.capeagulhas.org/resource-category/policies-and-laws",
     "code": "za-wc033",
     "ga": "UA-123714032-1",
     "microsite": true,
@@ -25,7 +25,7 @@
   },
   {
     "bucket": "matzikama.openbylaws.org.za",
-    "bylaws-url": "http://www.matzikamamun.co.za/resource-category/policies-and-laws",
+    "bylaws_url": "http://www.matzikamamun.co.za/resource-category/policies-and-laws",
     "code": "za-wc011",
     "ga": "UA-123714032-2",
     "microsite": true,
@@ -34,7 +34,7 @@
   },
   {
     "bucket": "mbizana.openbylaws.org.za",
-    "bylaws-url": "http://www.mbizana.gov.za/by-laws/",
+    "bylaws_url": "http://www.mbizana.gov.za/by-laws/",
     "code": "za-ec443",
     "ga": "UA-123714032-3",
     "microsite": true,
@@ -42,17 +42,17 @@
     "website-url": "http://www.mbizana.gov.za"
   },
   {
-    "bylaws-url": "https://www.bergmun.org.za/resource-category/policies-and-laws",
+    "bylaws_url": "https://www.bergmun.org.za/resource-category/policies-and-laws",
     "code": "za-wc013",
     "name": "Bergrivier"
   },
   {
-    "bylaws-url": "http://www.cederbergmun.gov.za/resource-category/policies-and-laws",
+    "bylaws_url": "http://www.cederbergmun.gov.za/resource-category/policies-and-laws",
     "code": "za-wc012",
     "name": "Cederberg"
   },
   {
-    "bylaws-url": "https://www.kannaland.gov.za/resource-category/policies-and-laws",
+    "bylaws_url": "https://www.kannaland.gov.za/resource-category/policies-and-laws",
     "code": "za-wc041",
     "name": "Kannaland"
   },
