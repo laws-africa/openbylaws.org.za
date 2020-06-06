@@ -28,7 +28,7 @@ ByLawSearch = function() {
     };
     
     if (region_code) {
-      params.frbr_uri__startswith = '/' + region_code + '/';
+      params.frbr_uri__startswith = '/akn/' + region_code + '/';
     }
 
     $.getJSON('https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws', params, function(response, textStatus, jqXHR) {
@@ -45,7 +45,7 @@ ByLawSearch = function() {
           hits.push(result);
 
           result.url = (result.region.microsite ? ('https://' + result.region.bucket) : '') +
-            result.frbr_uri + "/" + result.language + "/";
+            result.frbr_uri.slice(4) + "/" + result.language + "/";
 
           result.snippet = result._snippet
             .replace(/^\s*[;:",.()-]+/, '')  // trim leading punctuation

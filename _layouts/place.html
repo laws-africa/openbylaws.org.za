@@ -34,7 +34,7 @@ layout: base
         {% endif %}
 
         <form action="/search.html" method="get" role="search">
-          <input name="region" type="hidden" value="cpt">
+          <input name="region" type="hidden" value="{{ place.code }}">
           <div class="input-group">
             <input class="form-control" name="q" placeholder="Search the by-laws" type="text">
             <div class="input-group-append">
