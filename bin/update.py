@@ -58,7 +58,8 @@ class Updater:
             places = json.load(f)
 
         for place in places:
-            if not place_codes or place['code'] in place_codes:
+            # if we're doing all places, ignore microsites
+            if (not place_codes and not place.get('microsite')) or place['code'] in place_codes:
                 self.write_place(place)
 
         with open("_data/places.json", "w") as f:
