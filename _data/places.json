@@ -21,7 +21,7 @@
     "ga": "UA-123714032-1",
     "microsite": true,
     "name": "Cape Agulhas",
-    "website-url": "http://www.capeagulhas.org/"
+    "website_url": "http://www.capeagulhas.org/"
   },
   {
     "bucket": "matzikama.openbylaws.org.za",
@@ -30,7 +30,7 @@
     "ga": "UA-123714032-2",
     "microsite": true,
     "name": "Matzikama",
-    "website-url": "http://www.matzikamamun.co.za/"
+    "website_url": "http://www.matzikamamun.co.za/"
   },
   {
     "bucket": "mbizana.openbylaws.org.za",
@@ -39,14 +39,15 @@
     "ga": "UA-123714032-3",
     "microsite": true,
     "name": "Mbizana",
-    "website-url": "http://www.mbizana.gov.za"
+    "website_url": "http://www.mbizana.gov.za"
   },
   {
+    "bucket": "bergrivier.openbylaws.org.za",
     "bylaws_url": "https://www.bergmun.org.za/resource-category/policies-and-laws",
     "code": "za-wc013",
     "name": "Bergrivier",
     "microsite": true,
-    "website-url": "https://www.bergmun.org.za/"
+    "website_url": "https://www.bergmun.org.za/"
   },
   {
     "bucket": "cederberg.openbylaws.org.za",
@@ -54,7 +55,7 @@
     "code": "za-wc012",
     "name": "Cederberg",
     "microsite": true,
-    "website-url": "http://www.cederbergmun.gov.za/"
+    "website_url": "http://www.cederbergmun.gov.za/"
   },
   {
     "bylaws_url": "https://www.kannaland.gov.za/resource-category/policies-and-laws",
