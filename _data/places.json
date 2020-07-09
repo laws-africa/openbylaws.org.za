@@ -49,9 +49,12 @@
     "website-url": "https://www.bergmun.org.za/"
   },
   {
+    "bucket": "cederberg.openbylaws.org.za",
     "bylaws_url": "http://www.cederbergmun.gov.za/resource-category/policies-and-laws",
     "code": "za-wc012",
-    "name": "Cederberg"
+    "name": "Cederberg",
+    "microsite": true,
+    "website-url": "http://www.cederbergmun.gov.za/"
   },
   {
     "bylaws_url": "https://www.kannaland.gov.za/resource-category/policies-and-laws",
