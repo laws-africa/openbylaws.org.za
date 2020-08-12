@@ -1,6 +1,6 @@
 {% for child in include.items %}
   <li class="{{ child.type }}">
-    <a href="#{% if child.id %}{{ child.id }}{% elsif child.type == 'doc' %}{{ child.component }}{% else %}{{ child.type }}{% endif %}">{{ child.title }}</a>
+    <a href="#{% if child.id %}{{ child.id }}{% elsif child.type == 'attachment' %}{{ child.component }}{% else %}{{ child.type }}{% endif %}">{{ child.title }}</a>
 
     {% if child.children %}
       <ol>
