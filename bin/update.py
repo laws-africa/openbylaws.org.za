@@ -31,7 +31,7 @@ LANGUAGES_2 = {
 INDIGO_URL = 'https://api.laws.africa/v2'
 INDIGO_AUTH_TOKEN = os.environ.get('INDIGO_API_AUTH_TOKEN')
 if not INDIGO_AUTH_TOKEN:
-    log.error("INDIGO_AUTH_TOKEN environment variable is not set.")
+    log.error("INDIGO_API_AUTH_TOKEN environment variable is not set.")
     sys.exit(1)
 
 
@@ -246,30 +246,33 @@ class Updater:
         """
         log.info(f"Writing {work['frbr_uri']}")
 
-        # all languages and points in time
-        expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
+        if work['stub']:
+            self.write_expression(place, work, work, False, [])
+        else:
+            # all languages and points in time
+            expressions = [exp for pit in work['points_in_time'] for exp in pit['expressions']]
 
-        # point-in-time dates
-        dates = sorted(list(set(x['date'] for x in work['amendments'])))
+            # point-in-time dates
+            dates = sorted(list(set(x['date'] for x in work['amendments'])))
 
-        for expr in expressions:
-            # only fetch details if it's not the primary work expression
-            if expr['expression_frbr_uri'] != work['expression_frbr_uri']:
-                log.info(f"- Fetching {expr['expression_frbr_uri']}")
-                resp = self.indigo.get(expr['url'] + '.json', timeout=TIMEOUT)
-                resp.raise_for_status()
-                expr = resp.json()
-                self.remove_akn(expr)
-            else:
-                expr = work
+            for expr in expressions:
+                # only fetch details if it's not the primary work expression
+                if expr['expression_frbr_uri'] != work['expression_frbr_uri']:
+                    log.info(f"- Fetching {expr['expression_frbr_uri']}")
+                    resp = self.indigo.get(expr['url'] + '.json', timeout=TIMEOUT)
+                    resp.raise_for_status()
+                    expr = resp.json()
+                    self.remove_akn(expr)
+                else:
+                    expr = work
 
-            # detail page for latest expression date
-            if expr['expression_date'] == work['expression_date']:
-                self.write_expression(place, work, expr, False, dates)
+                # detail page for latest expression date
+                if expr['expression_date'] == work['expression_date']:
+                    self.write_expression(place, work, expr, False, dates)
 
-            # detail pages at historical points in time
-            if work['multiple_pits']:
-                self.write_expression(place, work, expr, True, dates)
+                # detail pages at historical points in time
+                if work['multiple_pits']:
+                    self.write_expression(place, work, expr, True, dates)
 
     def write_expression(self, place, work, expr, use_date, dates):
         """ Write the detail page for an expression.

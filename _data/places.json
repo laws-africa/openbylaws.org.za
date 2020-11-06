@@ -45,16 +45,16 @@
     "bucket": "bergrivier.openbylaws.org.za",
     "bylaws_url": "https://www.bergmun.org.za/resource-category/policies-and-laws",
     "code": "za-wc013",
-    "name": "Bergrivier",
     "microsite": true,
+    "name": "Bergrivier",
     "website_url": "https://www.bergmun.org.za/"
   },
   {
     "bucket": "cederberg.openbylaws.org.za",
     "bylaws_url": "http://www.cederbergmun.gov.za/resource-category/policies-and-laws",
     "code": "za-wc012",
-    "name": "Cederberg",
     "microsite": true,
+    "name": "Cederberg",
     "website_url": "http://www.cederbergmun.gov.za/"
   },
   {
