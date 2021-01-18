@@ -103,6 +103,9 @@ title: About
           <li>
             Photo of <a href="https://www.flickr.com/photos/robwallace/2249636397">Calitzdorp in Kannaland by Robert Wallace on flickr</a>
           </li>
+          <li>
+            Photo of <a href="https://www.flickr.com/photos/ipickmynose/4962863121/">Swartland by ipickmynose on flickr</a>
+          </li>
         </ul>
       </div>
     </div>
