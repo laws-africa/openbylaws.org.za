@@ -8,12 +8,13 @@ from datetime import datetime, timedelta
 from itertools import groupby, chain
 import argparse
 import copy
+import concurrent.futures
 
 import yaml
 import requests
 
 # setup logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)8s %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(thread)d %(levelname)8s %(message)s')
 log = logging.getLogger(__name__)
 
 TIMEOUT = 30
@@ -76,8 +77,9 @@ class Updater:
         with open(f"_data/works/{place['code']}.json", "w") as f:
             json.dump(works, f, indent=2, sort_keys=True)
 
-        for work in works:
-            self.write_work(place, work)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+            futures = [executor.submit(self.write_work, place, work) for work in works]
+            executor.wait(futures)
 
         if place.get('special'):
             return
