@@ -1,9 +1,8 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      master
+  schedule:
+    - cron: '0 2 * * *'
 
 jobs:
   deploy:
@@ -35,7 +34,8 @@ jobs:
         python bin/update.py
         bundle exec jekyll build --trace
 
-    - uses: JamesIves/github-pages-deploy-action@3.7.1
+    - name: Deploy to gh-pages
+      uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
