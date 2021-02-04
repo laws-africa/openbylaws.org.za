@@ -79,7 +79,7 @@ class Updater:
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
             futures = [executor.submit(self.write_work, place, work) for work in works]
-            executor.wait(futures)
+            concurrent.futures.wait(futures)
 
         if place.get('special'):
             return
