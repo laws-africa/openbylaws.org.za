@@ -180,8 +180,9 @@ class Updater:
 
         # walk through everything published on indigo
         url = f"/akn/{place['code']}/.json"
+        params = place.get('params', {})
         while url:
-            resp = self.indigo.get(INDIGO_URL + url, timeout=TIMEOUT)
+            resp = self.indigo.get(INDIGO_URL + url, params=params, timeout=TIMEOUT)
             resp.raise_for_status()
             data = resp.json()
             works.extend(data['results'])

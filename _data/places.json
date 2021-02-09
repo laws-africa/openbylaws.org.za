@@ -70,6 +70,7 @@
   {
     "code": "za",
     "name": "South Africa",
-    "special": true
+    "special": true,
+    "params": {"taxonomy": "lawsafrica-special:COVID-19"}
   }
 ]
