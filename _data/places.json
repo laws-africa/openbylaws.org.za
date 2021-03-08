@@ -68,9 +68,16 @@
     "name": "Kannaland"
   },
   {
+    "bylaws_url": "http://www.drakenstein.gov.za/about-us/administration/acts-and-bylaws",
+    "code": "za-wc023",
+    "name": "Drakenstein"
+  },
+  {
     "code": "za",
     "name": "South Africa",
-    "special": true,
-    "params": {"taxonomy": "lawsafrica-special:COVID-19"}
+    "params": {
+      "taxonomy": "lawsafrica-special:COVID-19"
+    },
+    "special": true
   }
 ]

@@ -106,6 +106,9 @@ title: About
           <li>
             Photo of <a href="https://www.flickr.com/photos/ipickmynose/4962863121/">Swartland by ipickmynose on flickr</a>
           </li>
+          <li>
+            Photo of Paarl Rock by Edith V
+          </li>
         </ul>
       </div>
     </div>
