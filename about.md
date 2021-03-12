@@ -26,7 +26,7 @@ title: About
 
         <h3>What are by-laws?</h3>
         <p>
-          By-laws are laws managed by municipalities. <a href="https://myconstitution.co.za/en/07.html#powers-and-functions-of-municipalities">The Constitution of South Africa</a> gives municipalities the power to pass their own legislation, in the form of by-laws, for particular subject areas. These by-laws the same power and force as other national and provincial legislation.
+          By-laws are laws managed by municipalities. <a href="https://myconstitution.co.za/en/07.html#powers-and-functions-of-municipalities">The Constitution of South Africa</a> gives municipalities the power to pass their own legislation, in the form of by-laws, for particular subject areas. These by-laws hold the same power and force as other national and provincial legislation.
         </p>
 
         <p>
