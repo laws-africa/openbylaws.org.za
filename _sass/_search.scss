@@ -58,3 +58,23 @@ ul.search-results {
   padding: 10px;
   border-radius: 3px;
 }
+
+mark {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 0px;
+  color: inherit;
+}
+
+.places {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+h6 {
+  &.text-primary {
+    cursor: pointer;
+  }
+}
