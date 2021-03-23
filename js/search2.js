@@ -1,6 +1,6 @@
 $(function() {
   var $form = $("form#search");
-  var $input = $("input[name=q]");
+  var $input = $("#query");
   var $waiting = $("#search-waiting");
   var q = $input.val();
   const $btn = $form.find("button[type=button]");
@@ -10,23 +10,25 @@ $(function() {
   $btn.click(function(e) {
     $input.val('');
     window.bylawSearch.queryChanged();
+    window.bylawSearch.noResults = false;
     $input.focus();
   });
   window.bylawSearch = new Vue({
     el: "#search-results",
     template: `
       <div class="mt-4" v-if="count > 0">
+        <p class="text-danger" v-if="suggestions">Did you mean <span class="text-secondary" v-html="suggestions"></span>?</p>
         <h3>You searched for "{{ q }}"</h3>
         <h6 class="mb-5">Found {{count}} results</h6>
         <div class="row justify-content-between container">
           <section>
             <h5>Places</h5>
-            <h6>All</h6>
-            <ul :key="place.key" v-for="place in places">
-              <li v-if="getRegion(place.key)">{{getRegion(place.key)}}({{place.count}})</li>
+            <h6 :class="activeAll ? '' : 'text-primary'" @click="getResults()">All</h6>
+            <ul class="places" :key="place.key" v-for="place in places">
+              <li @click="onPlaceClick(place.key)" class="place text-primary" :id="place.key" v-if="getRegion(place.key)">{{getRegion(place.key)}}({{place.count}})</li>
             </ul>
           </section>
-          <div class="col col-10">
+          <div v-if="results.length > 0" class="col col-10">
             <section class="card mb-3 bg-light" :key="indx" v-for="(result, indx) in results">
               <div class="card-body">
                 <h5 class="card-title">{{result.title}}</h5>
@@ -46,25 +48,41 @@ $(function() {
           </div>
         </div>
       </div>
+      <div v-else-if="q && noResults">No results match your search</div>
     `,
     data: {
       q: q,
       results: [],
-      count: 0,
       places: [],
+      count: 0,
+      activeAll: true,
+      noResults: false
     },
     methods: {
       queryChanged() {
         const q = document.getElementById("query").value;
         if (q !== this.q) this.q = q;
       },
-      getResults() {
+      onPlaceClick(id) {
+        this.activeAll = false;
+        const places = document.getElementsByClassName("place");
+        const active = document.getElementById(id);
+        Array.from(places).forEach((place) =>
+          place.classList.add("text-primary")
+        );
+        active.classList.remove("text-primary");
+        this.getResults(id);
+      },
+      getResults(place) {
         this.results = [];
-        this.count = 0;
+        if (!place) {
+          this.activeAll = true;
+          this.count = 0;
+        }
         setTimeout(() => {
           const params = {
             q: this.q,
-            country: "",
+            place: place ? place : "",
             v2: "hi",
           };
           if (this.q)
@@ -74,6 +92,13 @@ $(function() {
               (response) => {
                 this.count = response.count;
                 this.places = response.search.aggregations.places.buckets;
+                this.suggestions = response.search.did_you_mean
+                  ? response.search.did_you_mean.html
+                      .replace(/^\s*[;:",.()-]+/, "")
+                      .replace(/<b>/g, "<mark>")
+                      .replace(/<\/b>/g, "</mark>")
+                      .trim()
+                  : undefined;
                 response.results.forEach((result) => {
                   const newResult = {
                     title: result.title,
@@ -83,8 +108,8 @@ $(function() {
                   };
                   this.results.push(newResult);
                 });
-                console.log(response);
                 $waiting.hide();
+                if (response.count <= 0) this.noResults = true
               }
             );
         }, 1000);
@@ -99,7 +124,6 @@ $(function() {
     },
     watch: {
       q(newValue, oldValue) {
-        console.log(newValue);
         newValue ? $waiting.show() : $waiting.hide();
         this.getResults();
       },
