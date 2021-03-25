@@ -16,27 +16,7 @@ extra_js:
 
 
 <article>
-  <div class="container">
-    <div class="clearfix">
-      <form action="/search.html" class="form-horizontal" id="search" method="get">
-        <input name="region" type="hidden" value="">
-        <div class="input-group">
-          <input autofocus="autofocus" class="form-control" id="query" name="q" placeholder="What are you looking for?" type="text">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
-              Clear
-              <i class="fas fa-spinner fa-spin d-none"></i>
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div id="search-waiting">
-      Searching...
-    </div>
-    <div id="search-results"></div>
-
-  </div>
+  <div id="search-container"></div>
 </article>
 
 <script id="search-result-tmpl" type="x-tmpl-mustache">
