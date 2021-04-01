@@ -1,17 +1,34 @@
 $(function() {
+  function debounce(func, wait, immediate) {
+    let timeout;
+    return function() {
+      const context = this;
+      const args = arguments;
+      const later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (immediate && !timeout) func.apply(context, args);
+    };
+  }
+
+  const regionMap = {};
+  for (let region of REGIONS) {
+    regionMap[region.code] = region;
+  }
+
   window.bylawSearch = new Vue({
     el: "#search-container",
     template: `
       <div class="container">
         <div class="clearfix">
-          <form action="/search.html" class="form-horizontal" id="search" method="get">
-            <input name="region" type="hidden" value="">
+          <form action="/search.html" class="form-horizontal" method="get" @submit.prevent="search">
             <div class="input-group">
-              <input autofocus="autofocus" class="form-control" v-model="q" id="query" name="q" placeholder="What are you looking for?" type="search">
+              <input autofocus class="form-control" v-model="q" name="q" placeholder="What are you looking for?" type="search" autocomplete="off">
               <div class="input-group-append">
-                <button @click.prevent="q=''" class="btn btn-primary">
-                  Clear
-                </button>
+                <button type="button" class="btn btn-primary">Search</button>
               </div>
             </div>
           </form>
@@ -19,30 +36,41 @@ $(function() {
         <div v-if="waiting">
           Searching...
         </div>
-        <div class="mt-4" v-if="count > 0">
-          <p class="text-danger" v-if="suggestions">Did you mean <span class="text-secondary" v-html="suggestions"></span>?</p>
-          <h3>You searched for "{{ q }}"</h3>
-          <h6 class="mb-5">Found {{count}} results</h6>
-          <div class="row justify-content-between container">
-            <section>
+        <div class="mt-3" v-if="count > 0">
+          <p class="text-danger" v-if="suggestion">
+            Did you mean <a href="#" v-html="suggestion.html" @click.prevent="q = suggestion.q"></a>?
+          </p>
+          
+          <h6 class="mb-4">Found {{count}} results</h6>
+          
+          <div class="row justify-content-between">
+            <section class="col-md-2">
               <h5>Places</h5>
-              <h6 :class="activeAll ? '' : 'text-primary'" @click="getResults()">All</h6>
-              <ul class="places" :key="place.key" v-for="place in places">
-                <li @click="onPlaceClick(place.key)" class="place text-primary" :id="place.key" v-if="getRegion(place.key)">{{getRegion(place.key)}}({{place.count}})</li>
+              <ul class="places">
+                <li>
+                  <a href="#" @click="place = ''" :class="place == '' ? 'font-weight-bold' : ''">All ({{ count }})</a>
+                </li>
+                <li v-if="p.details" v-for="p in places" :key="p.key">
+                  <a href="#" @click="place = p.key" :class="place == p.key ? 'font-weight-bold' : ''">
+                    {{ p.details.name }} ({{ p.count }})
+                  </a>
+                </li>
               </ul>
             </section>
-            <div v-if="results.length > 0" class="col col-10">
+
+            <div class="col-md-10">
               <section class="card mb-3 bg-light" :key="indx" v-for="(result, indx) in results">
-                <div class="card-body">
-                  <h5 class="card-title">{{result.title}}</h5>
-                  <h6 class="card-subtitle  mb-2 text-muted">{{getRegion(result.country)}} > {{getRegion(result.country + '-' +result.locality)}}</h6>
+                <div class="card-body" v-if="result.place">
+                  <h5 class="card-title"><a :href="result.url">{{result.title}}</a></h5>
+                  <h6 class="card-subtitle  mb-2 text-muted">{{result.place.name}}</h6>
+                  
                   <section v-if="result.results.length > 0">
                     <ul :key="snippet.id" v-for="snippet in result.results" class="list-group list-group-flush">
                       <li class="list-group-item">
-                        <p class="text-primary"><a :href="result.expression_frbr_uri + '#' + snippet.id">{{snippet.title}}</a></p>
-                        <p :key="indx" v-for="(highlight, indx) in snippet._search.highlight.body">
-                          <span v-html="highlight"></span>
-                        </p>
+                        <div><a :href="result.url + '#' + snippet.id">{{snippet.title}}</a></div>
+                        <div :key="indx" v-for="(highlight, indx) in snippet._search.highlight.body">
+                          ... <span v-html="highlight"></span> ...
+                        </div>
                       </li>
                     </ul>
                   </section>
@@ -51,7 +79,8 @@ $(function() {
             </div>
           </div>
         </div>
-        <div v-else-if="q && noResults">No results match your search</div>
+
+        <div v-else-if="q && !waiting && count == 0">No results match your search</div>
       </div>
     `,
     data: {
@@ -59,82 +88,63 @@ $(function() {
       results: [],
       places: [],
       count: 0,
-      activeAll: true,
-      noResults: false,
       waiting: false,
+      place: '',
+      suggestion: null,
     },
     methods: {
-      queryChanged() {
-        const q = document.getElementById("query").value;
-        if (q !== this.q) this.q = q;
+      search() {
+        this.q = this.q.trim();
+        this.waiting = this.q.length > 0;
+        if (this.q.length > 0) this.getResults();
       },
-      onPlaceClick(id) {
-        this.activeAll = false;
-        const places = document.getElementsByClassName("place");
-        const active = document.getElementById(id);
-        Array.from(places).forEach((place) =>
-          place.classList.add("text-primary")
-        );
-        active.classList.remove("text-primary");
-        this.getResults(id);
-      },
-      getResults(place) {
+      getResults() {
         this.results = [];
-        if (!place) {
-          this.activeAll = true;
-          this.count = 0;
-        }
-        setTimeout(() => {
-          const params = {
-            q: this.q,
-            place: place ? place : "",
-            v2: "hi",
-          };
-          if (this.q)
-            $.getJSON(
-              "https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws",
-              params,
-              (response) => {
-                this.count = response.count;
-                this.places = response.search.aggregations.places.buckets;
-                this.suggestions = response.search.did_you_mean
-                  ? response.search.did_you_mean.html
-                      .replace(/^\s*[;:",.()-]+/, "")
-                      .replace(/<b>/g, "<mark>")
-                      .replace(/<\/b>/g, "</mark>")
-                      .trim()
-                  : undefined;
-                response.results.forEach((result) => {
-                  const newResult = {
-                    title: result.title,
-                    country: result.country,
-                    locality: result.locality,
-                    results: result._search.provisions.results,
-                    expression_frbr_uri: result.expression_frbr_uri
-                  };
-                  this.results.push(newResult);
-                });
-                this.waiting = false;
-                if (response.count <= 0) this.noResults = true;
+        this.count = 0;
+        const params = {
+          q: this.q,
+          place: this.place,
+          v2: "hi",
+        };
+        if (this.q)
+          $.getJSON(
+            "https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws",
+            params,
+            (response) => {
+              this.count = response.count;
+              this.places = response.search.aggregations.places.buckets.map((p) => {
+                p.details = regionMap[p.key];
+                return p;
+              });
+              this.suggestion = response.search.did_you_mean;
+              if (this.suggestion) {
+                this.suggestion.html = this.suggestion.html.replace(/^\s*[;:",.()-]+/, "").trim();
               }
-            );
-        }, 1000);
-      },
-      getRegion(code) {
-        const region = REGIONS.find(
-          (region) => region.code === code.toString()
-        );
-        if (region) return region.name;
-        return "";
-      },
+              this.results = response.results.map((result) => {
+                return {
+                  title: result.title,
+                  place: regionMap[result.country + (result.locality ? '-' + result.locality : '')],
+                  results: result._search.provisions.results,
+                  url: result.expression_frbr_uri.substring(4, result.expression_frbr_uri.indexOf('@'))
+                };
+              });
+              this.waiting = false;
+            }
+          );
+      }
+    },
+    computed: {
+      noPlace() {
+        return this.place === '';
+      }
     },
     watch: {
-      q(newValue, oldValue) {
-        this.noResults = false;
-        if (newValue) this.waiting = true;
-        else this.waiting = false;
-        this.getResults();
-      },
+      q: debounce(function(newValue, oldValue) {
+        this.search();
+      }, 200),
+      place () {
+        this.search();
+      }
     },
   });
 });
