@@ -121,11 +121,17 @@ $(function() {
                 this.suggestion.html = this.suggestion.html.replace(/^\s*[;:",.()-]+/, "").trim();
               }
               this.results = response.results.map((result) => {
+                let url = result.expression_frbr_uri.substring(4, result.expression_frbr_uri.indexOf('@'));
+                const place = regionMap[result.country + (result.locality ? '-' + result.locality : '')];
+                if (place && place.microsite) {
+                  url = 'https://' + place.bucket + url;
+                }
+
                 return {
                   title: result.title,
-                  place: regionMap[result.country + (result.locality ? '-' + result.locality : '')],
+                  place: place,
+                  url: url,
                   results: result._search.provisions.results,
-                  url: result.expression_frbr_uri.substring(4, result.expression_frbr_uri.indexOf('@'))
                 };
               });
               this.waiting = false;
