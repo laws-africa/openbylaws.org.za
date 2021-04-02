@@ -20,7 +20,7 @@ description: COVID-19 Regulations for South Africa, up-to-date and easy to read 
 
     <p>For more information and resources on COVID-19, please visit <a href="https://sacoronavirus.co.za/">sacoronavirus.co.za</a>.</p>
 
-    {% assign latest_work = site.data.works.za | sort: "as_at_date" | last %}
+    {% assign latest_work = site.data.works.za-wc013 | sort: "as_at_date" | last %}
     <p><b>Last updated: {{ latest_work.as_at_date|date:"%Y-%m-%d" }}</b></p>
 
     <table class="table table-sm table-hover sticky-thead">
@@ -32,7 +32,7 @@ description: COVID-19 Regulations for South Africa, up-to-date and easy to read 
         </tr>
       </thead>
       <tbody>
-        {% assign works = site.data.works.za | where: "stub", "false" | where: "repealed", "false" | where: "has_parent", "true" %}
+        {% assign works = site.data.works.za-wc013 | where: "stub", "false" | where: "repealed", "false" | where: "has_parent", "true" %}
         {% assign groups = works | group_by: "parent_work.title" | sort: "name" %}
 
         {% for group in groups %}
@@ -61,7 +61,7 @@ description: COVID-19 Regulations for South Africa, up-to-date and easy to read 
       </tbody>
     </table>
 
-    {% assign repealed = site.data.works.za | where: "repealed", "true" | sort: "title" %}
+    {% assign repealed = site.data.works.za-wc013 | where: "repealed", "true" | sort: "title" %}
     {% if repealed %}
       <h4 class="mt-4">Repealed</h4>
 

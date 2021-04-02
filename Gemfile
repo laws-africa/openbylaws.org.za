@@ -15,6 +15,8 @@ gem 'kramdown-parser-gfm', "~> 1.1"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-redirect-from", "~> 0.15"
