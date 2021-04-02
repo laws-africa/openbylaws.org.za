@@ -125,10 +125,9 @@ $(function() {
         this.count = 0;
         const params = {
           q: this.q,
-          place: this.place,
-          v2: "hi",
+          place: this.place
         };
-        $.getJSON("https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws", params)
+        $.getJSON("https://jjkxbrqcf6.execute-api.eu-west-1.amazonaws.com/search", params)
           .done((response) => {
             this.count = response.count;
             this.places = response.search.aggregations.places.buckets.map((p) => {
