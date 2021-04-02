@@ -44,8 +44,7 @@ $(function() {
           <h6 class="mb-4">Found {{count}} results</h6>
           
           <div class="row justify-content-between">
-            <section class="col-md-2">
-              <h5>Places</h5>
+            <section class="col-md-2" v-if="!forcePlace">
               <ul class="places">
                 <li>
                   <a href="#" @click.prevent="place = ''" :class="place == '' ? 'font-weight-bold' : ''">All ({{ count }})</a>
@@ -87,6 +86,7 @@ $(function() {
       q: "",
       results: [],
       places: [],
+      forcePlace: null,
       count: 0,
       waiting: false,
       place: '',
@@ -94,6 +94,10 @@ $(function() {
     },
     mounted() {
       window.onpopstate = this.searchFromUrl;
+      // must we always limit results to one place?
+      if (window.place) {
+        this.forcePlace = this.place = window.place;
+      }
       this.searchFromUrl();
     },
     methods: {
@@ -101,7 +105,9 @@ $(function() {
         // kick-off search from URL
         const params = new URLSearchParams(location.search);
         this.q = params.get('q');
-        this.place = params.get('region');
+        if (!this.forcePlace) {
+          this.place = params.get('region');
+        }
       },
       search() {
         this.q = this.q.trim();
@@ -134,7 +140,7 @@ $(function() {
               this.suggestion.html = this.suggestion.html.replace(/^\s*[;:",.()-]+/, "").trim();
             }
             this.results = response.results.map((result) => {
-              let url = result.expression_frbr_uri.substring(4, result.expression_frbr_uri.indexOf('@'));
+              let url = result.expression_frbr_uri.substring(4, result.expression_frbr_uri.indexOf('@')) + '/';
               const place = regionMap[result.country + (result.locality ? '-' + result.locality : '')];
               if (place && place.microsite) {
                 url = 'https://' + place.bucket + url;

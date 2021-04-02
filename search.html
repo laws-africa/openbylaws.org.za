@@ -14,54 +14,9 @@ extra_js:
   </div>
 </header>
 
-
 <article>
   <div id="search-container"></div>
 </article>
-
-<script id="search-result-tmpl" type="x-tmpl-mustache">
-{% raw %}
-<div class="row">
-  <div class="col-md-3">
-    <div class="list-group">
-      <a class="list-group-item {{#no_region}}active{{/no_region}}" href="#">
-        <span>All Cities</span>
-      </a>
-      {{#regions}}
-      <a class="list-group-item {{#active}}active{{/active}}" data-code="{{ code }}" href="#">
-        <span>{{name}}</span>
-      </a>
-      {{/regions}}
-    </div>
-  </div>
-  <div class="col-md-9">
-    <p class="search-results-summary">
-    Found {{ count }} by-laws
-    </p>
-    {{^count}}
-    <p>
-    We couldn't find anything relating to
-    <em>{{q}}</em>
-    </p>
-    {{/count}}
-    <ul class="search-results">
-      {{#hits.hits}}
-      <li>
-        <a href="{{ url }}">{{{ title }}}</a>
-        {{#repealed}}
-        <span class="label label-warning">repealed</span>
-        {{/repealed}}
-        <div class="info">{{ region.name }}</div>
-        {{#snippet}}
-        <div class="snippet">... {{{ snippet }}} ...</div>
-        {{/snippet}}
-      </li>
-      {{/hits.hits}}
-    </ul>
-  </div>
-</div>
-{% endraw %}
-</script>
 
 <script type="text/javascript">
 var REGIONS = {{ site.data.places | jsonify }};
