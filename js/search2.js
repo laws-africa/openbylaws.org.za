@@ -48,10 +48,10 @@ $(function() {
               <h5>Places</h5>
               <ul class="places">
                 <li>
-                  <a href="#" @click="place = ''" :class="place == '' ? 'font-weight-bold' : ''">All ({{ count }})</a>
+                  <a href="#" @click.prevent="place = ''" :class="place == '' ? 'font-weight-bold' : ''">All ({{ count }})</a>
                 </li>
                 <li v-if="p.details" v-for="p in places" :key="p.key">
-                  <a href="#" @click="place = p.key" :class="place == p.key ? 'font-weight-bold' : ''">
+                  <a href="#" @click.prevent="place = p.key" :class="place == p.key ? 'font-weight-bold' : ''">
                     {{ p.details.name }} ({{ p.count }})
                   </a>
                 </li>
@@ -59,8 +59,8 @@ $(function() {
             </section>
 
             <div class="col-md-10">
-              <section class="card mb-3 bg-light" :key="indx" v-for="(result, indx) in results">
-                <div class="card-body" v-if="result.place">
+              <section class="card mb-3 bg-light" :key="indx" v-for="(result, indx) in results" v-if="result.place">
+                <div class="card-body">
                   <h5 class="card-title"><a :href="result.url">{{result.title}}</a></h5>
                   <h6 class="card-subtitle  mb-2 text-muted">{{result.place.name}}</h6>
                   
@@ -92,11 +92,27 @@ $(function() {
       place: '',
       suggestion: null,
     },
+    mounted() {
+      window.onpopstate = this.searchFromUrl;
+      this.searchFromUrl();
+    },
     methods: {
+      searchFromUrl() {
+        // kick-off search from URL
+        const params = new URLSearchParams(location.search);
+        this.q = params.get('q');
+        this.place = params.get('region');
+      },
       search() {
         this.q = this.q.trim();
         this.waiting = this.q.length > 0;
-        if (this.q.length > 0) this.getResults();
+
+        // update URL
+        history.pushState(null, null, '?q=' + encodeURIComponent(this.q) + '&region=' + encodeURIComponent(this.place));
+
+        if (this.q.length > 0) {
+          this.getResults();
+        }
       },
       getResults() {
         this.results = [];
@@ -106,37 +122,35 @@ $(function() {
           place: this.place,
           v2: "hi",
         };
-        if (this.q)
-          $.getJSON(
-            "https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws",
-            params,
-            (response) => {
-              this.count = response.count;
-              this.places = response.search.aggregations.places.buckets.map((p) => {
-                p.details = regionMap[p.key];
-                return p;
-              });
-              this.suggestion = response.search.did_you_mean;
-              if (this.suggestion) {
-                this.suggestion.html = this.suggestion.html.replace(/^\s*[;:",.()-]+/, "").trim();
-              }
-              this.results = response.results.map((result) => {
-                let url = result.expression_frbr_uri.substring(4, result.expression_frbr_uri.indexOf('@'));
-                const place = regionMap[result.country + (result.locality ? '-' + result.locality : '')];
-                if (place && place.microsite) {
-                  url = 'https://' + place.bucket + url;
-                }
-
-                return {
-                  title: result.title,
-                  place: place,
-                  url: url,
-                  results: result._search.provisions.results,
-                };
-              });
-              this.waiting = false;
+        $.getJSON("https://srbeugae08.execute-api.eu-west-1.amazonaws.com/default/searchOpenBylaws", params)
+          .done((response) => {
+            this.count = response.count;
+            this.places = response.search.aggregations.places.buckets.map((p) => {
+              p.details = regionMap[p.key];
+              return p;
+            });
+            this.suggestion = response.search.did_you_mean;
+            if (this.suggestion) {
+              this.suggestion.html = this.suggestion.html.replace(/^\s*[;:",.()-]+/, "").trim();
             }
-          );
+            this.results = response.results.map((result) => {
+              let url = result.expression_frbr_uri.substring(4, result.expression_frbr_uri.indexOf('@'));
+              const place = regionMap[result.country + (result.locality ? '-' + result.locality : '')];
+              if (place && place.microsite) {
+                url = 'https://' + place.bucket + url;
+              }
+
+              return {
+                title: result.title,
+                place: place,
+                url: url,
+                results: result._search.provisions.results,
+              };
+            });
+          })
+          .always(() => {
+            this.waiting = false;
+          });
       }
     },
     computed: {
@@ -147,7 +161,7 @@ $(function() {
     watch: {
       q: debounce(function(newValue, oldValue) {
         this.search();
-      }, 200),
+      }, 250),
       place () {
         this.search();
       }
