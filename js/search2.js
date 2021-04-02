@@ -44,7 +44,7 @@ $(function() {
           <h6 class="mb-4">Found {{count}} results</h6>
           
           <div class="row justify-content-between">
-            <section class="col-md-2" v-if="!forcePlace">
+            <section class="col-md-3 col-lg-2" v-if="!forcePlace">
               <ul class="places">
                 <li>
                   <a href="#" @click.prevent="place = ''" :class="place == '' ? 'font-weight-bold' : ''">All ({{ count }})</a>
@@ -57,7 +57,7 @@ $(function() {
               </ul>
             </section>
 
-            <div class="col-md-10">
+            <div class="col-md-9 col-lg-10">
               <section class="card mb-3 bg-light" :key="indx" v-for="(result, indx) in results" v-if="result.place">
                 <div class="card-body">
                   <h5 class="card-title"><a :href="result.url">{{result.title}}</a></h5>
