@@ -110,13 +110,13 @@ $(function() {
         }
       },
       search() {
-        this.q = this.q.trim();
-        this.waiting = this.q.length > 0;
+        const q = this.q.trim();
+        this.waiting = q.length > 0;
 
         // update URL
         history.pushState(null, null, '?q=' + encodeURIComponent(this.q) + '&region=' + encodeURIComponent(this.place));
 
-        if (this.q.length > 0) {
+        if (q.length > 0) {
           this.getResults();
         }
       },
@@ -124,7 +124,7 @@ $(function() {
         this.results = [];
         this.count = 0;
         const params = {
-          q: this.q,
+          q: this.q.trim(),
           place: this.place
         };
         $.getJSON("https://jjkxbrqcf6.execute-api.eu-west-1.amazonaws.com/search", params)
