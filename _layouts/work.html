@@ -1,9 +1,5 @@
 ---
 layout: base
-extra_css:
-- '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/laws-africa/indigo-web@3.12.0/css/akoma-ntoso.min.css">'
-extra_js:
-- '/js/work.js'
 ---
 
 {% assign place = site.data.places|where: "code", page.place_code|first %}
@@ -96,9 +92,14 @@ extra_js:
     </div>
 
     {% if work.stub %}
-      <article class="akoma-ntoso akoma-ntoso-container stub">
-        {{ content }}
-      </article>
+      <la-akoma-ntoso>
+        <la-decorate-terms link-terms popup-definitions></la-decorate-terms>
+        <la-decorate-internal-refs popups flag></la-decorate-internal-refs>
+        <article class="akoma-ntoso akoma-ntoso-container stub">
+          {{ content }}
+        </article>
+      </la-akoma-ntoso>
+
       {% include work_stub.html %}
 
     {% else %}
