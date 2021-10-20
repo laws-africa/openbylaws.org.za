@@ -92,13 +92,13 @@ layout: base
     </div>
 
     {% if work.stub %}
-      <la-akoma-ntoso>
-        <la-decorate-terms link-terms popup-definitions></la-decorate-terms>
-        <la-decorate-internal-refs popups flag></la-decorate-internal-refs>
-        <article class="akoma-ntoso akoma-ntoso-container stub">
+      <article class="akoma-ntoso akoma-ntoso-container stub">
+        <la-akoma-ntoso>
+          <la-decorate-terms link-terms popup-definitions></la-decorate-terms>
+          <la-decorate-internal-refs popups flag></la-decorate-internal-refs>
           {{ content }}
-        </article>
-      </la-akoma-ntoso>
+        </la-akoma-ntoso>
+      </article>
 
       {% include work_stub.html %}
 
@@ -123,13 +123,13 @@ layout: base
 
             </div>
             <div class="col-md-8">
-              <la-akoma-ntoso>
-                <la-decorate-terms link-terms popup-definitions></la-decorate-terms>
-                <la-decorate-internal-refs popups flag></la-decorate-internal-refs>
-                <article class="akoma-ntoso akoma-ntoso-container" id="top" lang="{{ page.language2 }}">
+              <article class="akoma-ntoso akoma-ntoso-container" id="top" lang="{{ page.language2 }}">
+                <la-akoma-ntoso>
+                  <la-decorate-terms link-terms popup-definitions></la-decorate-terms>
+                  <la-decorate-internal-refs popups flag></la-decorate-internal-refs>
                   {{ content }}
-                </article>
-              </la-akoma-ntoso>
+                </la-akoma-ntoso>
+              </article>
             </div>
           </div>
         </div>
