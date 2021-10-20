@@ -33,6 +33,7 @@ jobs:
         JEKYLL_ENV: production
         INDIGO_API_AUTH_TOKEN: ${{ secrets.INDIGO_API_AUTH_TOKEN }}
       run: |
+        rm -rf za-wc013
         python bin/update.py
         bundle exec jekyll build --trace
 
