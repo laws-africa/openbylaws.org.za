@@ -10,24 +10,6 @@
   .published {
     font-style: italic;
   }
-
-  .popover-content .akn-term {
-    border-bottom-width: 0px;
-  }
-
-  .term-link {
-    cursor: pointer;
-    color: #007bff;
-
-    &:hover {
-      color: #007bff;
-      text-decoration: underline;
-    }
-  }
-
-  :target {
-    animation: fadeout 2s;
-  }
 }
 
 .downloads {
@@ -116,7 +98,7 @@ nav.left-nav {
         height: 22px;
         z-index: 1;
       }
-      
+
       &::after {
         right: 100%;
         border: solid transparent;
@@ -160,7 +142,7 @@ nav.left-nav {
     float: left;
     text-align: left;
     border-radius: 0 !important;
-    } 
+    }
     @media (max-width: 767px) {
       margin-top: 10px;
     }
