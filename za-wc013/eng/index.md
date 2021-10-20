@@ -1,0 +1,1256 @@
+---
+alternates: []
+description: By-laws for Bergrivier, up-to-date and easy to read and share.
+expressions:
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '1994-11-11'
+  expression_date: '1994-11-11'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11
+  frbr_uri: /za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif
+  full_publication: Western Cape Provincial Gazette no. 4889
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '1994-11-11'
+    expressions:
+    - expression_date: '1994-11-11'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11
+      language: eng
+      title: Levying of an Availability Charge for Sewerage (Municipal Council of
+        Velddrif)
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11
+  publication_date: '1994-11-11'
+  publication_document:
+    filename: za-wc013-act-by-law-1994-levying-of-availability-charge-for-sewerage-velddrif-publication-document.pdf
+    mime_type: application/pdf
+    size: 10530745
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/media/publication/za-wc013-act-by-law-1994-levying-of-availability-charge-for-sewerage-velddrif-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '4889'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Levying of an Availability Charge for Sewerage (Municipal Council of Velddrif)
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1994/levying-of-availability-charge-for-sewerage-velddrif/eng@1994-11-11
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '1998-09-25'
+  expression_date: '1998-09-25'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25
+  frbr_uri: /za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg
+  full_publication: Western Cape Provincial Gazette no. 5288
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '1998-09-25'
+    expressions:
+    - expression_date: '1998-09-25'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25
+      language: eng
+      title: Dilapidated Buildings and Unsightly and Objectionable Structures (Piketberg
+        Municipal Council)
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25
+  publication_date: '1998-09-25'
+  publication_document:
+    filename: za-wc013-act-by-law-1998-dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg-publication-document.pdf
+    mime_type: application/pdf
+    size: 17655627
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/media/publication/za-wc013-act-by-law-1998-dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '5288'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Dilapidated Buildings and Unsightly and Objectionable Structures (Piketberg
+    Municipal Council)
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/dilapidated-buildings-and-unsightly-and-objectionable-structures-piketberg/eng@1998-09-25
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '1998-09-25'
+  expression_date: '1998-09-25'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25
+  frbr_uri: /za-wc013/act/by-law/1998/keeping-of-bees-piketberg
+  full_publication: Western Cape Provincial Gazette no. 5288
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '1998-09-25'
+    expressions:
+    - expression_date: '1998-09-25'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25
+      language: eng
+      title: Keeping of Bees (Municipal Council of Piketberg)
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25
+  publication_date: '1998-09-25'
+  publication_document:
+    filename: za-wc013-act-by-law-1998-keeping-of-bees-piketberg-publication-document.pdf
+    mime_type: application/pdf
+    size: 17655627
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/media/publication/za-wc013-act-by-law-1998-keeping-of-bees-piketberg-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '5288'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Keeping of Bees (Municipal Council of Piketberg)
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/keeping-of-bees-piketberg/eng@1998-09-25
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '1998-10-01'
+  expression_date: '1998-09-25'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25
+  frbr_uri: /za-wc013/act/by-law/1998/shop-trolleys-piketberg
+  full_publication: Western Cape Provincial Gazette no. 5288
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '1998-09-25'
+    expressions:
+    - expression_date: '1998-09-25'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25
+      language: eng
+      title: Shop Trolleys (Municipal Council of Piketberg)
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25
+  publication_date: '1998-09-25'
+  publication_document:
+    filename: za-wc013-act-by-law-1998-shop-trolleys-piketberg-publication-document.pdf
+    mime_type: application/pdf
+    size: 17655627
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/1998/shop-trolleys-piketberg/media/publication/za-wc013-act-by-law-1998-shop-trolleys-piketberg-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '5288'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Shop Trolleys (Municipal Council of Piketberg)
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/shop-trolleys-piketberg/eng@1998-09-25
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '1998-09-25'
+  expression_date: '1998-09-25'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25
+  frbr_uri: /za-wc013/act/by-law/1998/swimming-bath
+  full_publication: Western Cape Provincial Gazette no. 5288
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '1998-09-25'
+    expressions:
+    - expression_date: '1998-09-25'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25
+      language: eng
+      title: Swimming Bath (Municipal Council of Piketberg)
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25
+  publication_date: '1998-09-25'
+  publication_document:
+    filename: za-wc013-act-by-law-1998-swimming-bath-publication-document.pdf
+    mime_type: application/pdf
+    size: 17655627
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/1998/swimming-bath/media/publication/za-wc013-act-by-law-1998-swimming-bath-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '5288'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Swimming Bath (Municipal Council of Piketberg)
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/swimming-bath/eng@1998-09-25
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '1998-09-25'
+  expression_date: '1998-09-25'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25
+  frbr_uri: /za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg
+  full_publication: Western Cape Provincial Gazette no. 5288
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '1998-09-25'
+    expressions:
+    - expression_date: '1998-09-25'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25
+      language: eng
+      title: Vessels, Trailors, Boats, or any Towing or Sailing Equipment on Vacant
+        Land (Piketberg Municipal Council)
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25
+  publication_date: '1998-09-25'
+  publication_document:
+    filename: za-wc013-act-by-law-1998-vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg-publication-document.pdf
+    mime_type: application/pdf
+    size: 17655627
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/media/publication/za-wc013-act-by-law-1998-vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '5288'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Vessels, Trailors, Boats, or any Towing or Sailing Equipment on Vacant Land
+    (Piketberg Municipal Council)
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/1998/vessels-trailors-boats-or-any-towing-or-sailing-equipment-on-vacant-land-piketberg/eng@1998-09-25
+- amendments:
+  - amending_title: 'Advertising and Signage: Amendment'
+    amending_uri: /za-wc013/act/by-law/2013/advertising-and-signage-amendment
+    date: '2013-12-06'
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2013-12-06'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06
+  frbr_uri: /za-wc013/act/by-law/2009/advertising-and-signage
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: true
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/advertising-and-signage/eng@2009-11-09
+      language: eng
+      title: Advertising and Signage
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/advertising-and-signage/eng@2009-11-09
+  - date: '2013-12-06'
+    expressions:
+    - expression_date: '2013-12-06'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06
+      language: eng
+      title: Advertising and Signage
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-advertising-and-signage-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Advertising and Signage
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/advertising-and-signage/eng@2013-12-06
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/cemeteries-and-crematoria
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09
+      language: eng
+      title: Cemeteries and Crematoria
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-cemeteries-and-crematoria-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Cemeteries and Crematoria
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/cemeteries-and-crematoria/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/commonage/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/commonage
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/commonage/eng@2009-11-09
+      language: eng
+      title: Commonage
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/commonage/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-commonage-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Commonage
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/commonage/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09
+      language: eng
+      title: Credit Control, Tariffs and Debt Collection
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-credit-control-tariffs-debt-collection-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Credit Control, Tariffs and Debt Collection
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/credit-control-tariffs-debt-collection/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/electricity-supply
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09
+      language: eng
+      title: Electricity Supply
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-electricity-supply-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Electricity Supply
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/electricity-supply/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/fences-and-walls
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09
+      language: eng
+      title: Fences and Walls
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-fences-and-walls-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Fences and Walls
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/fences-and-walls/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/impoundment-of-animals
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09
+      language: eng
+      title: Impoundment of Animals
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-impoundment-of-animals-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Impoundment of Animals
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/impoundment-of-animals/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/informal-trading
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09
+      language: eng
+      title: Informal Trading
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-informal-trading-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Informal Trading
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/informal-trading/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09
+      language: eng
+      title: Prevention of Public Nuisances and Public Nuisances arising from the
+        Keeping of Animals
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Prevention of Public Nuisances and Public Nuisances arising from the Keeping
+    of Animals
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/prevention-of-public-nuisances-and-public-nuisances-arising-from-the-keeping-of-animals/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/public-amenities
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09
+      language: eng
+      title: Public Amenities
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-public-amenities-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Public Amenities
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/public-amenities/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/public-buses-and-taxis
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09
+      language: eng
+      title: Public Buses and Taxis
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-public-buses-and-taxis-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Public Buses and Taxis
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/public-buses-and-taxis/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/roads-and-streets
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09
+      language: eng
+      title: Roads and Streets
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-roads-and-streets-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Roads and Streets
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/roads-and-streets/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/solid-waste-disposal
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09
+      language: eng
+      title: Solid Waste Disposal
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-solid-waste-disposal-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Solid Waste Disposal
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/solid-waste-disposal/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/sporting-facilities
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09
+      language: eng
+      title: Sporting Facilities
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-sporting-facilities-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Sporting Facilities
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/sporting-facilities/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/stormwater-management
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09
+      language: eng
+      title: Stormwater Management
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-stormwater-management-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Stormwater Management
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/stormwater-management/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2009-11-09'
+  expression_date: '2009-11-09'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09
+  frbr_uri: /za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent
+  full_publication: Western Cape Provincial Gazette no. 6675
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2009-11-09'
+    expressions:
+    - expression_date: '2009-11-09'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09
+      language: eng
+      title: Water Supply, Sanitation Services and Industrial Effluent
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09
+  publication_date: '2009-11-09'
+  publication_document:
+    filename: za-wc013-act-by-law-2009-water-supply-sanitation-services-industrial-effluent-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2009/provincial-gazette-ZA-WC-no-6675-dated-2009-11-09.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '6675'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Water Supply, Sanitation Services and Industrial Effluent
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2009/water-supply-sanitation-services-industrial-effluent/eng@2009-11-09
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2012-07-01'
+  expression_date: '2012-06-08'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08
+  frbr_uri: /za-wc013/act/by-law/2012/property-rates
+  full_publication: Western Cape Provincial Gazette no. 7003
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2012-06-08'
+    expressions:
+    - expression_date: '2012-06-08'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08
+      language: eng
+      title: Property Rates
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08
+  publication_date: '2012-06-08'
+  publication_document:
+    filename: za-wc013-act-by-law-2012-property-rates-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2012/provincial-gazette-ZA-WC-no-7003-dated-2012-06-08.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '7003'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Property Rates
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2012/property-rates/eng@2012-06-08
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2013-12-06'
+  expression_date: '2013-12-06'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06
+  frbr_uri: /za-wc013/act/by-law/2013/air-pollution-control
+  full_publication: Western Cape Provincial Gazette no. 7208
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2013-12-06'
+    expressions:
+    - expression_date: '2013-12-06'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06
+      language: eng
+      title: Air Pollution Control
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06
+  publication_date: '2013-12-06'
+  publication_document:
+    filename: za-wc013-act-by-law-2013-air-pollution-control-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2013/provincial-gazette-ZA-WC-no-7208-dated-2013-12-06.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '7208'
+  repeal:
+    date: '2020-07-03'
+    repealing_title: Air Quality
+    repealing_uri: /za-wc013/act/by-law/2020/air-quality
+  repealed: true
+  stub: false
+  title: Air Pollution Control
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2013/air-pollution-control/eng@2013-12-06
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2016-06-24'
+  expression_date: '2016-06-24'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24
+  frbr_uri: /za-wc013/act/by-law/2016/fire-safety
+  full_publication: Western Cape Provincial Gazette no. 7637
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2016-06-24'
+    expressions:
+    - expression_date: '2016-06-24'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24
+      language: eng
+      title: Fire Safety
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24
+  publication_date: '2016-06-24'
+  publication_document:
+    filename: za-wc013-act-by-law-2016-fire-safety-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2016/provincial-gazette-ZA-WC-no-7637-dated-2016-06-24.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '7637'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Fire Safety
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2016/fire-safety/eng@2016-06-24
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2016-06-17'
+  expression_date: '2016-06-17'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17
+  frbr_uri: /za-wc013/act/by-law/2016/integrated-zoning-scheme
+  full_publication: Western Cape Provincial Gazette no. 7629
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2016-06-17'
+    expressions:
+    - expression_date: '2016-06-17'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17
+      language: eng
+      title: Integrated Zoning Scheme
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17
+  publication_date: '2016-06-17'
+  publication_document:
+    filename: za-wc013-act-by-law-2016-integrated-zoning-scheme-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2016/provincial-gazette-ZA-WC-no-7629-dated-2016-06-17.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '7629'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Integrated Zoning Scheme
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2016/integrated-zoning-scheme/eng@2016-06-17
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2018-12-07'
+  expression_date: '2018-12-07'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07
+  frbr_uri: /za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public
+  full_publication: Western Cape Provincial Gazette no. 8015
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2018-12-07'
+    expressions:
+    - expression_date: '2018-12-07'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07
+      language: eng
+      title: Control of Undertakings that Sell Liquor to the Public
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07
+  publication_date: '2018-12-07'
+  publication_document:
+    filename: za-wc013-act-by-law-2018-control-of-undertakings-that-sell-liquor-to-the-public-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2018/provincial-gazette-ZA-WC-no-8015-dated-2018-12-07.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '8015'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Control of Undertakings that Sell Liquor to the Public
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2018/control-of-undertakings-that-sell-liquor-to-the-public/eng@2018-12-07
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2018-04-06'
+  expression_date: '2018-04-06'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06
+  frbr_uri: /za-wc013/act/by-law/2018/municipal-land-use-planning
+  full_publication: Western Cape Provincial Gazette no. 7910
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2018-04-06'
+    expressions:
+    - expression_date: '2018-04-06'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06
+      language: eng
+      title: Municipal Land Use Planning
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06
+  publication_date: '2018-04-06'
+  publication_document:
+    filename: za-wc013-act-by-law-2018-municipal-land-use-planning-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2018/provincial-gazette-ZA-WC-no-7910-dated-2018-04-06.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '7910'
+  repeal:
+    date: '2020-12-11'
+    repealing_title: Municipal Land Use Planning
+    repealing_uri: /za-wc013/act/by-law/2020/municipal-land-use-planning
+  repealed: true
+  stub: false
+  title: Municipal Land Use Planning
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2018/municipal-land-use-planning/eng@2018-04-06
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2018-07-13'
+  expression_date: '2018-07-13'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13
+  frbr_uri: /za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council
+  full_publication: Western Cape Provincial Gazette no. 7957
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2018-07-13'
+    expressions:
+    - expression_date: '2018-07-13'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13
+      language: eng
+      title: Rules of Order for the Conduct of Meetings of the Council
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13
+  publication_date: '2018-07-13'
+  publication_document:
+    filename: za-wc013-act-by-law-2018-rules-of-order-for-the-conduct-of-meetings-of-the-council-of-bergrivier-municipality-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2018/provincial-gazette-ZA-WC-no-7957-dated-2018-07-13.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '7957'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Rules of Order for the Conduct of Meetings of the Council
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2018/rules-of-order-for-the-conduct-of-meetings-of-the-council/eng@2018-07-13
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2019-09-01'
+  expression_date: '2019-07-05'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05
+  frbr_uri: /za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary
+  full_publication: Western Cape Provincial Gazette no. 8124
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2019-07-05'
+    expressions:
+    - expression_date: '2019-07-05'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05
+      language: eng
+      title: Management and Use of the Berg River Estuary
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05
+  publication_date: '2019-07-05'
+  publication_document:
+    filename: za-wc013-act-by-law-2019-management-and-use-of-the-berg-river-estuary-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2019/provincial-gazette-ZA-WC-no-8124-dated-2019-07-05.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '8124'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Management and Use of the Berg River Estuary
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2019/management-and-use-of-the-berg-river-estuary/eng@2019-07-05
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2020-07-03'
+  expression_date: '2020-07-03'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2020/air-quality/eng@2020-07-03
+  frbr_uri: /za-wc013/act/by-law/2020/air-quality
+  full_publication: Western Cape Provincial Gazette no. 8261
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2020-07-03'
+    expressions:
+    - expression_date: '2020-07-03'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2020/air-quality/eng@2020-07-03
+      language: eng
+      title: Air Quality
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2020/air-quality/eng@2020-07-03
+  publication_date: '2020-07-03'
+  publication_document:
+    filename: za-wc013-act-by-law-2020-air-quality-publication-document.pdf
+    mime_type: ''
+    size: null
+    url: https://archive.opengazettes.org.za/archive/ZA-WC/2020/provincial-gazette-ZA-WC-no-8261-dated-2020-07-03.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '8261'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Air Quality
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2020/air-quality/eng@2020-07-03
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2020-10-23'
+  expression_date: '2020-10-23'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2020/control-of-vessels-and-boating-activities-on-the-berg-river-estuary/eng@2020-10-23
+  frbr_uri: /za-wc013/act/by-law/2020/control-of-vessels-and-boating-activities-on-the-berg-river-estuary
+  full_publication: Western Cape Provincial Gazette no. 8338
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2020-10-23'
+    expressions:
+    - expression_date: '2020-10-23'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2020/control-of-vessels-and-boating-activities-on-the-berg-river-estuary/eng@2020-10-23
+      language: eng
+      title: Control of Vessels and Boating Activities on the Berg River Estuary
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2020/control-of-vessels-and-boating-activities-on-the-berg-river-estuary/eng@2020-10-23
+  publication_date: '2020-10-23'
+  publication_document:
+    filename: za-wc013-act-by-law-2020-control-of-vessels-and-boating-activities-on-the-berg-river-estuary-publication-document.pdf
+    mime_type: application/pdf
+    size: 3891251
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/2020/control-of-vessels-and-boating-activities-on-the-berg-river-estuary/media/publication/za-wc013-act-by-law-2020-control-of-vessels-and-boating-activities-on-the-berg-river-estuary-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '8338'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Control of Vessels and Boating Activities on the Berg River Estuary
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2020/control-of-vessels-and-boating-activities-on-the-berg-river-estuary/eng@2020-10-23
+- amendments: []
+  as_at_date: '2021-10-15'
+  assent_date: null
+  commencement_date: '2020-12-11'
+  expression_date: '2020-12-11'
+  expression_frbr_uri: /akn/za-wc013/act/by-law/2020/municipal-land-use-planning/eng@2020-12-11
+  frbr_uri: /za-wc013/act/by-law/2020/municipal-land-use-planning
+  full_publication: Western Cape Provincial Gazette no. 8365
+  has_parent: false
+  language: eng
+  languages:
+  - eng
+  multiple_pits: false
+  numbered_title: null
+  parent_work: null
+  points_in_time:
+  - date: '2020-12-11'
+    expressions:
+    - expression_date: '2020-12-11'
+      expression_frbr_uri: /akn/za-wc013/act/by-law/2020/municipal-land-use-planning/eng@2020-12-11
+      language: eng
+      title: Municipal Land Use Planning
+      url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2020/municipal-land-use-planning/eng@2020-12-11
+  publication_date: '2020-12-11'
+  publication_document:
+    filename: za-wc013-act-by-law-2020-municipal-land-use-planning-publication-document.pdf
+    mime_type: application/pdf
+    size: 39812400
+    url: https://edit.laws.africa/works/akn/za-wc013/act/by-law/2020/municipal-land-use-planning/media/publication/za-wc013-act-by-law-2020-municipal-land-use-planning-publication-document.pdf
+  publication_name: Western Cape Provincial Gazette
+  publication_number: '8365'
+  repeal: null
+  repealed: false
+  stub: false
+  title: Municipal Land Use Planning
+  type_name: By-law
+  url: https://api.laws.africa/v2/akn/za-wc013/act/by-law/2020/municipal-land-use-planning/eng@2020-12-11
+language: eng
+languages:
+- code: eng
+  name: English
+layout: place
+place_code: za-wc013
+title: Bergrivier By-laws
+---
