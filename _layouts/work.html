@@ -92,8 +92,8 @@ layout: base
     </div>
 
     {% if work.stub %}
-      <article class="akoma-ntoso akoma-ntoso-container stub">
-        <la-akoma-ntoso>
+      <article class="akoma-ntoso-container stub">
+        <la-akoma-ntoso class="flash-target">
           <la-decorate-terms link-terms popup-definitions></la-decorate-terms>
           <la-decorate-internal-refs popups flag></la-decorate-internal-refs>
           {{ content }}
@@ -123,8 +123,8 @@ layout: base
 
             </div>
             <div class="col-md-8">
-              <article class="akoma-ntoso akoma-ntoso-container" id="top" lang="{{ page.language2 }}">
-                <la-akoma-ntoso>
+              <article class="akoma-ntoso-container" id="top" lang="{{ page.language2 }}">
+                <la-akoma-ntoso class="flash-target">
                   <la-decorate-terms link-terms popup-definitions></la-decorate-terms>
                   <la-decorate-internal-refs popups flag></la-decorate-internal-refs>
                   {{ content }}
