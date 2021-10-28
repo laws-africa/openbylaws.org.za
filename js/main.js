@@ -38,10 +38,3 @@ $(function() {
     });
   }
 });
-
-$(function() {
-  var tocElements = document.querySelectorAll("[data-toc]")
-  for (var element of tocElements) {
-    element.items = JSON.parse(element.dataset.toc);
-  }
-})
