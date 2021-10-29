@@ -1,6 +1,8 @@
-
 <la-table-of-contents-controller
   items="{{ page.toc | jsonify | escape }}"
+  expand-all-btn-classes="btn btn-sm btn-primary"
+  collapse-all-btn-classes="btn btn-sm btn-primary"
+  search-filter-input-classes="form-control"
 >
   <span slot="expand-icon">
     <i class="fas fa-caret-right"></i>
