@@ -1,6 +1,13 @@
-<ol>
-  <li>
-    <a href="#top">Entire {{ work.type_name }}</a>
-    {% include toc_items.html items=page.toc %}
-  </li>
-</ol>
+<la-table-of-contents-controller
+  items="{{ page.toc | jsonify | escape }}"
+  expand-all-btn-classes="btn btn-sm btn-primary"
+  collapse-all-btn-classes="btn btn-sm btn-primary"
+  search-filter-input-classes="form-control"
+>
+  <span slot="expand-icon">
+    <i class="fas fa-caret-right"></i>
+  ️</span>
+  <span slot="collapse-icon">
+    <i class="fas fa-caret-down"></i>
+  </span>
+</la-table-of-contents-controller>
