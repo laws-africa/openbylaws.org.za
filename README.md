@@ -1,7 +1,5 @@
 # openbylaws.org.za
 
-[![Build Status](https://travis-ci.com/laws-africa/openbylaws.org.za.svg?branch=master)](http://travis-ci.com/laws-africa/openbylaws.org.za)
-
 This repo is the openbylaws.org.za website, based on Jekyll. There are two major steps to building this website:
 
 1. `bin/update.py` is a Python script which pulls by-law information from Laws.Africa and sets up the appropriate Jekyll site structure.
