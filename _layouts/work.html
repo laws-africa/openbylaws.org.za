@@ -10,11 +10,9 @@ layout: base
     <div class="header-content">
       <ol class="list-inline breadcrumbs region">
         <li>
-          {% if place.special %}
-            <a href="/covid19/">South Africa COVID-19 Regulations</a>
-          {% else %}
+          {% unless place.special %}
             <a href="/{{ page.place_code }}/{{ page.language }}/">{{ place.name }}</a>
-          {% endif %}
+          {% endunless %}
         </li>
       </ol>
       <h1>

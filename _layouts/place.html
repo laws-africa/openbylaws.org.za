@@ -15,10 +15,6 @@ layout: base
   <div class="container">
     <div class="row">
       <div class="col-md-9">
-        {% unless place_code == 'za' %}
-          {% include covid19_notice.html %}
-        {% endunless %}
-
         {% if page.languages.size > 1 %}
           <div class="lang-changer">
             Change language:
