@@ -350,7 +350,7 @@ class Updater:
 
         for img in images:
             log.info(f"- Fetching and saving image {img['filename']}")
-            resp = self.indigo.get(img['url'])
+            resp = self.indigo.get(img['url'], timeout=TIMEOUT)
             # this is a binary string
             data = resp.content
             with open(os.path.join(dirname, img['filename']), "wb") as f:
@@ -361,8 +361,9 @@ class Updater:
         os.makedirs(dirname, exist_ok=True)
 
         for fmt, params in [('pdf', {}), ('epub', {}), ('html', {'standalone': '1'})]:
-            log.info(f"- Fetching {fmt}")
-            resp = self.indigo.get(expr['url'] + "." + fmt, params=params)
+            url = expr['url'] + "." + fmt
+            log.info(f"- Fetching {url}")
+            resp = self.indigo.get(url, params=params, timeout=TIMEOUT)
 
             # this is a binary string
             data = resp.content
