@@ -329,9 +329,6 @@ class Updater:
             if not self.skip_images:
                 self.write_images(place, expr, dirname)
 
-            if not self.skip_archive:
-                self.write_archive_formats(place, expr, dirname)
-
     def write_images(self, place, expr, dirname):
         images = []
 
@@ -354,20 +351,6 @@ class Updater:
             # this is a binary string
             data = resp.content
             with open(os.path.join(dirname, img['filename']), "wb") as f:
-                f.write(data)
-
-    def write_archive_formats(self, place, expr, dirname):
-        dirname = os.path.join(dirname, 'resources')
-        os.makedirs(dirname, exist_ok=True)
-
-        for fmt, params in [('pdf', {}), ('epub', {}), ('html', {'standalone': '1'})]:
-            url = expr['url'] + "." + fmt
-            log.info(f"- Fetching {url}")
-            resp = self.indigo.get(url, params=params, timeout=TIMEOUT)
-
-            # this is a binary string
-            data = resp.content
-            with open(os.path.join(dirname, expr['language'] + '.' + fmt), "wb") as f:
                 f.write(data)
 
     def work_toc(self, work):
