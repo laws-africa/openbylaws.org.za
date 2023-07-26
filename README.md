@@ -1,3 +1,5 @@
+# NOTE: this repo is no longer in use. OpenByLaws.org.za is now powered by [Laws.Africa's Open Law Technology](https://laws.africa/open-law-technology)
+
 # openbylaws.org.za
 
 This repo is the openbylaws.org.za website, based on Jekyll. There are two major steps to building this website:
