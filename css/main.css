@@ -1,0 +1,422 @@
+body {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  background-image: none; }
+
+#header a.navbar-brand {
+  background-image: url(/img/logo-md-inv.png);
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+  background-size: 35px;
+  padding-left: 45px; }
+
+.lawsafrica-site-header {
+  padding: 5px 0px;
+  text-align: right;
+  background-color: #e9ecef; }
+
+#footer {
+  background-color: #e9ecef;
+  margin-top: 5rem; }
+  #footer ul {
+    padding-left: 0px;
+    list-style: none; }
+  #footer a[rel="license"] > img {
+    width: 88px;
+    margin: 0px 0px 10px 0px; }
+
+#main-content {
+  margin-bottom: 40px; }
+  #main-content header {
+    background-color: #e9ecef;
+    padding: 10px 0px; }
+    #main-content header h1 {
+      margin: 0px;
+      font-size: 24.5px; }
+      #main-content header h1 a {
+        color: inherit; }
+    #main-content header h2 {
+      font-size: 19px; }
+    #main-content header .breadcrumbs {
+      margin-left: 0px; }
+      @media print {
+        #main-content header .breadcrumbs {
+          display: none; } }
+      #main-content header .breadcrumbs li {
+        padding-left: 0px; }
+    #main-content header h1 + .breadcrumbs {
+      margin: 10px 0px 0px; }
+  #main-content nav {
+    margin-top: 10px; }
+  #main-content > article,
+  #main-content .bylaws-page {
+    margin-top: 20px; }
+    @media (min-width: 769px) {
+      #main-content > article,
+      #main-content .bylaws-page {
+        margin-left: 15px;
+        margin-right: 15px; } }
+
+.lang-changer {
+  margin-bottom: 20px; }
+  .lang-changer ul {
+    display: inline;
+    margin-left: 5px; }
+
+/* phones */
+@media (max-width: 768px) {
+  .full-xs {
+    width: 100%; }
+
+  input[type=text],
+  input[type=email] {
+    font-size: 16px; } }
+@media print {
+  @page {
+    margin: 2cm; }
+  body, .container {
+    width: auto; }
+
+  body {
+    margin: 2cm; }
+
+  nav, .navbar .nav {
+    display: none; }
+
+  #main-content header {
+    border-bottom: 0px;
+    text-align: center; }
+    #main-content header a {
+      text-decoration: none; }
+    #main-content header ol.breadcrumbs.region {
+      display: block;
+      text-align: center; } }
+.resources h3 {
+  margin-top: 0px; }
+
+.resources .place-logo {
+  max-width: 100%; }
+
+.about-nav.affix {
+  top: 20px; }
+
+.download-list .download {
+  display: block;
+  float: left;
+  width: 90px;
+  height: 110px;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  background: #efefef;
+  text-align: center;
+  color: #777; }
+.download-list .download:hover,
+.download-list .download:active,
+.download-list .download:focus {
+  text-decoration: none; }
+.download-list .download:hover {
+  box-shadow: 4px 4px 3px 0px rgba(0, 0, 0, 0.25);
+  top: -1px;
+  left: -1px; }
+.download-list .title {
+  font-size: 12px;
+  line-height: 1.2;
+  display: block;
+  height: 74px;
+  overflow-y: hidden; }
+.download-list .format {
+  display: block;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  color: white;
+  left: -0.5em;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  line-height: 1.5; }
+.download-list .format::before {
+  content: "";
+  bottom: -0.5em;
+  border-width: .5em 0 0 0.5em;
+  position: absolute;
+  display: block;
+  border-style: solid;
+  z-index: -1; }
+.download-list .pdf .format {
+  background-color: #D9534F; }
+.download-list .pdf .format::before {
+  border-color: #A94442 transparent transparent transparent; }
+.download-list .epub .format {
+  background-color: #89B70B; }
+.download-list .epub .format::before {
+  border-color: #79A70A transparent transparent transparent; }
+.download-list .html .format {
+  background-color: #2989d8; }
+.download-list .html .format::before {
+  border-color: #0675b3 transparent transparent transparent; }
+
+#main-page section {
+  padding: 20px 0px; }
+  #main-page section h1:first-child,
+  #main-page section h2:first-child,
+  #main-page section h3:first-child {
+    margin-top: 0px; }
+#main-page .welcome {
+  background-color: #e9ecef; }
+#main-page .about {
+  background-color: #e9ecef;
+  margin-top: 20px; }
+#main-page .places {
+  padding-bottom: 0px; }
+#main-page .logo {
+  width: 110px; }
+#main-page .social-buttons {
+  margin-bottom: 30px; }
+  #main-page .social-buttons a {
+    padding: 5px;
+    margin-right: 10px; }
+  #main-page .social-buttons a.twitter {
+    color: white;
+    background-color: #55acee; }
+  #main-page .social-buttons a.facebook {
+    color: white;
+    background-color: #3b5998; }
+
+.sponsors {
+  margin-top: 20px;
+  padding: 20px 0px; }
+  .sponsors img {
+    height: 50px; }
+
+.placard {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-color: #333;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  transition: opacity 0.15s ease;
+  background-position: 0; }
+  .placard:hover {
+    opacity: 0.8; }
+  .placard h2, .placard h3 {
+    position: absolute;
+    color: white;
+    display: inline;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px; }
+  .placard.ads {
+    background-image: url(/img/issues/ads-placard.jpg);
+    background-position: 0% 30%; }
+  .placard.animals {
+    background-image: url(/img/issues/animals-placard.jpg);
+    background-position: 60% 40%; }
+  .placard.neighbours {
+    background-image: url(/img/issues/neighbours-placard.jpg);
+    background-position: 40% 70%; }
+  .placard.noise {
+    background-image: url(/img/issues/noise-placard.jpg);
+    background-position: 100% 30%; }
+
+.action-blocks .action-block {
+  background: inherit;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px; }
+  .action-blocks .action-block > i[class*="fa-"] {
+    float: left; }
+.action-blocks h3 {
+  margin-top: 0px; }
+.action-blocks .action {
+  margin-left: 90px; }
+
+.regions {
+  margin-bottom: 10px; }
+  .regions .region {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 10px; }
+    .regions .region h3 {
+      margin-top: 0px; }
+    .regions .region ul {
+      margin-bottom: 0px; }
+    .regions .region li a {
+      display: block;
+      overflow-x: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+
+table.sticky-thead thead th {
+  position: sticky;
+  top: -1px; }
+
+@keyframes fadeout {
+  from {
+    background-color: yellow; }
+  to {
+    background-color: none; } }
+.akoma-ntoso-container {
+  margin-top: 20px;
+  overflow-x: auto; }
+  .akoma-ntoso-container .published {
+    font-style: italic; }
+
+.downloads .btn {
+  margin-left: 10px; }
+
+.popover.term-definition {
+  max-width: 400px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); }
+  .popover.term-definition .akn-term {
+    color: inherit; }
+  .popover.term-definition .akn-subsection {
+    margin-left: 0px; }
+
+#bylaws-page .resources > h1, #bylaws-page .resources > h2, #bylaws-page .resources > h3 {
+  margin-top: 0px; }
+
+.social-buttons {
+  margin-top: 8px; }
+  .social-buttons a {
+    margin-right: 10px; }
+  .social-buttons a:hover {
+    text-decoration: none; }
+
+nav.left-nav {
+  position: sticky;
+  top: 10px;
+  max-height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  padding-right: 5px;
+  padding-bottom: 10px; }
+  @media print {
+    nav.left-nav {
+      display: none; } }
+  @media (max-width: 767px) {
+    nav.left-nav {
+      display: none; } }
+
+.timeline {
+  position: relative; }
+  .timeline .timeline-items li {
+    position: relative;
+    margin-left: 50px;
+    background-color: #efefef;
+    padding: 10px 10px;
+    margin-bottom: 15px; }
+    .timeline .timeline-items li h5 {
+      margin-top: 0px;
+      font-weight: bold; }
+    .timeline .timeline-items li::before {
+      right: 100%;
+      border: #ddd 5px solid;
+      content: " ";
+      position: absolute;
+      top: 10px;
+      left: -50px;
+      background-color: #333;
+      width: 22px;
+      height: 22px;
+      z-index: 1; }
+    .timeline .timeline-items li::after {
+      right: 100%;
+      border: solid transparent;
+      content: " ";
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-right-color: #efefef;
+      border-width: 10px;
+      top: 10px;
+      left: -20px; }
+  .timeline .timeline-items::after {
+    background: #ddd;
+    z-index: 0;
+    content: "";
+    display: block;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 4px;
+    opacity: 0.35; }
+
+.help {
+  margin-top: 10px;
+  background-color: #f5f0e1;
+  padding: 20px;
+  border-radius: 3px; }
+  .help h3 {
+    margin-top: 0; }
+  .help .btn-group-vertical > .btn {
+    float: left;
+    text-align: left;
+    border-radius: 0 !important; }
+  @media (max-width: 767px) {
+    .help .btn-group-vertical {
+      margin-top: 10px; } }
+  .help .answer {
+    margin-top: 20px; }
+
+.single-sol {
+  box-shadow: 0px 0px 3px 0px #d4cdb9;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  min-height: 150px;
+  background-color: #fff;
+  color: #000; }
+  .single-sol > i {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    font-size: 28px;
+    opacity: 0.25; }
+  .single-sol small {
+    font-size: 11px;
+    line-height: 20px; }
+
+.feedback a {
+  color: #666;
+  font-size: 18px;
+  cursor: pointer; }
+  .feedback a:hover, .feedback a:active, .feedback a:focus {
+    text-decoration: none; }
+    .feedback a:hover.positive, .feedback a:active.positive, .feedback a:focus.positive {
+      color: #149e28; }
+    .feedback a:hover.negative, .feedback a:active.negative, .feedback a:focus.negative {
+      color: #9e1414; }
+  .feedback a.active.positive {
+    color: #149e28; }
+  .feedback a.active.negative {
+    color: #9e1414; }
+
+la-toc-item[parent] > .content > .content__action > .content__action__title {
+  font-weight: bold; }
+
+mark {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 0px;
+  color: inherit; }
+
+.places {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0.5rem; }
